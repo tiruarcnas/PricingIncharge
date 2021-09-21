@@ -51,6 +51,12 @@ export default function Sidebar() {
               PreviewsOrders
             </li>
             </Link>
+            <Link to="/newproduct" className="link">
+            <li className="sidebarListItem">
+              <BarChart className="sidebarIcon" />
+              Set Reminders
+            </li>
+            </Link>
           </ul>
         </div>
        
