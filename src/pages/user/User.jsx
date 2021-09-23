@@ -31,7 +31,7 @@ export default function User() {
               <span className="userShowUserTitle">Software Engineer</span>
             </div>
           </div> */}
-          {/* <div className="userShowBottom">
+           {/* <div className="userShowBottom">
             <span className="userShowTitle">Account Details</span>
             <div className="userShowInfo">
               <PermIdentity className="userShowIcon" />
@@ -54,14 +54,14 @@ export default function User() {
               <LocationSearching className="userShowIcon" />
               <span className="userShowInfoTitle">New York | USA</span>
             </div>
-          </div> */}
+          </div>  */}
         {/* </div> */}
         <div className="userUpdate">
           <span className="userUpdateTitle">Edit</span>
           <form className="userUpdateForm">
             <div className="userUpdateLeft">
               <div className="userUpdateItem">
-                <label>Username</label>
+                <label>Order Created By</label>
                 <input
                   type="text"
                   placeholder="annabeck99"
@@ -69,7 +69,7 @@ export default function User() {
                 />
               </div>
               <div className="userUpdateItem">
-                <label>Full Name</label>
+                <label>Employee Id</label>
                 <input
                   type="text"
                   placeholder="Anna Becker"
@@ -77,7 +77,7 @@ export default function User() {
                 />
               </div>
               <div className="userUpdateItem">
-                <label>Email</label>
+                <label>Department</label>
                 <input
                   type="text"
                   placeholder="annabeck99@gmail.com"
@@ -85,15 +85,15 @@ export default function User() {
                 />
               </div>
               <div className="userUpdateItem">
-                <label>Phone</label>
+                <label>Product Name</label>
                 <input
                   type="text"
-                  placeholder="+1 123 456 67"
+                  placeholder=""
                   className="userUpdateInput"
                 />
               </div>
               <div className="userUpdateItem">
-                <label>Address</label>
+                <label>CAS Number</label>
                 <input
                   type="text"
                   placeholder="New York | USA"
@@ -101,7 +101,63 @@ export default function User() {
                 />
               </div>
               <div className="userUpdateItem">
-                <label>Address</label>
+                <label>Brand</label>
+                <input
+                  type="text"
+                  placeholder="New York | USA"
+                  className="userUpdateInput"
+                />
+              </div>
+              <div className="userUpdateItem">
+                <label>catalouge Number</label>
+                <input
+                  type="text"
+                  placeholder="New York | USA"
+                  className="userUpdateInput"
+                />
+              </div>
+              <div className="userUpdateItem">
+                <label>Pack Size</label>
+                <input
+                  type="text"
+                  placeholder="New York | USA"
+                  className="userUpdateInput"
+                />
+              </div>
+              <div className="userUpdateItem">
+                <label>Order Quantity</label>
+                <input
+                  type="text"
+                  placeholder="New York | USA"
+                  className="userUpdateInput"
+                />
+              </div>
+              <div className="userUpdateItem">
+                <label>Importance Type</label>
+                <input
+                  type="text"
+                  placeholder="New York | USA"
+                  className="userUpdateInput"
+                />
+              </div>
+              <div className="userUpdateItem">
+                <label>Product Type</label>
+                <input
+                  type="text"
+                  placeholder="New York | USA"
+                  className="userUpdateInput"
+                />
+              </div>
+              <div className="userUpdateItem">
+                <label>Vendor Name</label>
+                <input
+                  type="text"
+                  placeholder="New York | USA"
+                  className="userUpdateInput"
+                />
+              </div>
+              <div className="userUpdateItem">
+                <label>Add Comments</label>
                 <input
                   type="text"
                   placeholder="New York | USA"
@@ -111,14 +167,14 @@ export default function User() {
             </div>
             <div className="userUpdateRight">
               <div className="userUpdateUpload">
-                <img
+                {/* <img
                   className="userUpdateImg"
                   src="https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                   alt=""
                 />
                 <label htmlFor="file">
                   <Publish className="userUpdateIcon" />
-                </label>
+                </label> */}
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
               <button className="userUpdateButton">Update</button>
@@ -126,6 +182,6 @@ export default function User() {
           </form>
         </div>
       </div>
-    </div>
+      </div>
   );
 }
