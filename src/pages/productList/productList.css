@@ -1,4 +1,4 @@
-.productList{
+/* .productList{
     flex: 4;
 }
 
@@ -28,4 +28,87 @@
 .productListDelete{
     color: red;
     cursor: pointer;
-}
+} */
+
+.widgetLg {
+    width: 100%;
+    flex: 5;
+    margin: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    padding: 5px;
+  }
+  
+  .widgetLgTitle {
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 20px;
+    text-align:justify;
+  }
+  
+  .widgetLgTable{
+    width: 100%;
+    border-spacing: 17px;
+    border-radius: 20px;
+    
+  }
+  
+  .widgetLgTh{
+    text-align: left;
+  }
+  
+  .widgetLgUser{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  .widgetLgImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .widgetLgDate,.widgetLgAmount{
+    font-weight: 300;
+  }
+  
+  .widgetLgButton {
+    padding: 5px 7px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .widgetLgButton.Approved{
+      background-color: #e5faf2;
+      color: #3bb077;
+  }
+  .widgetLgButton.Declined{
+      background-color: #fff0f1;
+      color: #d95087;
+  
+  }
+  .widgetLgButton.Pending{
+      background-color: #ebf1fe;
+      color: #2a7ade;
+  
+  }
+  
+  .widgetLgbutton{
+    justify-content:space-between;
+    align-content: center;
+    border-radius: 10px;
+    margin-inline: auto;
+    border:none;
+    font-size: 15px;
+  }
+  
+  .widgetLgbutton:hover{
+    background-color: turquoise;
+    cursor: pointer;
+    
+  }
+  

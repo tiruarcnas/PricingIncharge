@@ -12,10 +12,11 @@
 }
 
 .addProductItem {
-  width: 250px;
+  width: 40%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-bottom: 10px;
+  justify-content:space-between;
 }
 
 .addProductItem > label {
@@ -25,8 +26,50 @@
 }
 
 .addProductItem > input {
-  padding: 10px;
+  max-width: 50%;
+  margin-inline:inherit;
+  padding: 5px;
 }
+
+.addProductItem4{
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content:space-between;
+}
+
+.addProductItem4 > label{
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.addProductItem4 > textarea {
+  max-width: 50%;
+  margin: inherit;
+  padding: 40px;
+} 
+
+.addProductItem5{
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content:space-between;
+}
+
+.addProductItem5 > label{
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.addProductItem5 > input {
+  max-width: 50%;
+  margin: inherit;
+  padding: 5px;
+} 
 
 .addProductItem > select {
   padding: 10px;
