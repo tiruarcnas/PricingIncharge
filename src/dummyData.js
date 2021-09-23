@@ -157,7 +157,7 @@ export const userData = [
     },
   ];
 
-  export const productRows = [
+  export const activeOrdersRows = [
     {
       id: 1,
       name: "Apple Airpods",
