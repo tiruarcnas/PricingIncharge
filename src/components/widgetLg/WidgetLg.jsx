@@ -32,8 +32,65 @@ export default function WidgetLg() {
           </td>
           <td className="widgetLgAmount">Gaseous state </td>
         </tr>
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser">
+            <span className="widgetLgName">210920210001</span>
+          </td>
+          <td className="widgetLgDate">Hydrogen</td>
+          <td className="widgetLgAmount">25 kg</td>
+          <td className="widgetLgStatus">CAS 001</td>
+          <td className="widgetLgDate">A</td>
+          <td className="widgetLgAmount">Arcnas</td>
+          <td className="widgetLgStatus">
+            <Button type="Approved" />
+          </td>
+          <td className="widgetLgAmount">Gaseous state </td>
+        </tr>
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser">
+            <span className="widgetLgName">210920210001</span>
+          </td>
+          <td className="widgetLgDate">Hydrogen</td>
+          <td className="widgetLgAmount">25 kg</td>
+          <td className="widgetLgStatus">CAS 001</td>
+          <td className="widgetLgDate">A</td>
+          <td className="widgetLgAmount">Arcnas</td>
+          <td className="widgetLgStatus">
+            <Button type="Approved" />
+          </td>
+          <td className="widgetLgAmount">Gaseous state </td>
+        </tr>
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser">
+            <span className="widgetLgName">210920210001</span>
+          </td>
+          <td className="widgetLgDate">Hydrogen</td>
+          <td className="widgetLgAmount">25 kg</td>
+          <td className="widgetLgStatus">CAS 001</td>
+          <td className="widgetLgDate">A</td>
+          <td className="widgetLgAmount">Arcnas</td>
+          <td className="widgetLgStatus">
+            <Button type="Approved" />
+          </td>
+          <td className="widgetLgAmount">Gaseous state </td>
+        </tr>
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser">
+            <span className="widgetLgName">210920210001</span>
+          </td>
+          <td className="widgetLgDate">Hydrogen</td>
+          <td className="widgetLgAmount">25 kg</td>
+          <td className="widgetLgStatus">CAS 001</td>
+          <td className="widgetLgDate">A</td>
+          <td className="widgetLgAmount">Arcnas</td>
+          <td className="widgetLgStatus">
+            <Button type="Approved" />
+          </td>
+          <td className="widgetLgAmount">Gaseous state </td>
+        </tr>
+        <button className="widgetLgbutton"> View More </button>
       </table>
-      <button className="widgetLgbutton">View More</button>
+     
     </div>
   );
 }
