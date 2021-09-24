@@ -1,6 +1,8 @@
 import React from "react";
 import "./topbar.css";
-import { NotificationsNone, Language, Settings } from "@material-ui/icons";
+import { NotificationsNone, Language, Settings} from "@material-ui/icons";
+//import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import {Dropdown} from 'react-bootstrap';
 
 export default function Topbar() {
@@ -24,7 +26,7 @@ export default function Topbar() {
           </div>
           <div class="dropdown">
     <button class="dropbtn">InventoryIncharge 
-      
+    
     </button>
       <div class="dropdown-content">
             <a href="#">Profile</a>

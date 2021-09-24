@@ -1,12 +1,10 @@
 import "./sidebar.css";
-import {
-  LineStyle,
-  PermIdentity,
-  Storefront,
-  AttachMoney,
-  BarChart,
-  
-} from "@material-ui/icons";
+import HomeIcon from '@material-ui/icons/Home';
+import ListAltIcon from '@material-ui/icons/ListAlt';
+import RestoreIcon from '@material-ui/icons/Restore';
+import FastRewindIcon from '@material-ui/icons/FastRewind';
+import AlarmIcon from '@material-ui/icons/Alarm';
+import SaveIcon from '@material-ui/icons/Save';
 import { Link } from "react-router-dom";
 
 export default function Sidebar() {
@@ -18,7 +16,7 @@ export default function Sidebar() {
           <ul className="sidebarList">
             <Link to="/" className="link">
             <li className="sidebarListItem active">
-              <LineStyle className="sidebarIcon" />
+              <HomeIcon className="sidebarIcon" />
               Home
             </li>
             </Link>
@@ -29,31 +27,31 @@ export default function Sidebar() {
           <ul className="sidebarList">
             <Link to="/newUser" className="link">
               <li className="sidebarListItem">
-                <PermIdentity className="sidebarIcon" />
+                <ListAltIcon className="sidebarIcon" />
                 CreateOrders
               </li>
             </Link>
             <Link to="/users" className="link">
               <li className="sidebarListItem">
-                <Storefront className="sidebarIcon" />
+                <SaveIcon className="sidebarIcon" />
                 SavedOrders
               </li>
             </Link>
             <Link to="/products"  className="link">
             <li className="sidebarListItem">
-              <AttachMoney className="sidebarIcon" />
+              <RestoreIcon className="sidebarIcon" />
               ActiveOrders
             </li>
             </Link>
             <Link to="/saveproducts" className="link">
             <li className="sidebarListItem">
-              <BarChart className="sidebarIcon" />
+              <FastRewindIcon className="sidebarIcon" />
               PreviewsOrders
             </li>
             </Link>
             <Link to="/newproduct" className="link">
             <li className="sidebarListItem">
-              <BarChart className="sidebarIcon" />
+              <AlarmIcon className="sidebarIcon" />
               Set Reminders
             </li>
             </Link>
