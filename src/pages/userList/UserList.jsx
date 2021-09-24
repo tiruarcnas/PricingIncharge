@@ -15,27 +15,27 @@ export default function UserList() {
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     {
-      field: "user",
-      headerName: "User",
+      field: "orderId",
+      headerName: "Order ID",
       width: 200,
       renderCell: (params) => {
         return (
           <div className="userListUser">
-            <img className="userListImg" src={params.row.avatar} alt="" />
+            
             {params.row.username}
           </div>
         );
       },
     },
-    { field: "email", headerName: "Email", width: 200 },
+    { field: "chemical name", headerName: "Chemical Name", width: 200 },
     {
-      field: "status",
-      headerName: "Status",
+      field: "quantity",
+      headerName: "Quantity",
       width: 120,
     },
     {
-      field: "transaction",
-      headerName: "Transaction Volume",
+      field: "cas number",
+      headerName: "CAS",
       width: 160,
     },
     {

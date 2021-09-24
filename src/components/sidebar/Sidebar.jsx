@@ -45,7 +45,7 @@ export default function Sidebar() {
               ActiveOrders
             </li>
             </Link>
-            <Link to="/users" className="link">
+            <Link to="/saveproducts" className="link">
             <li className="sidebarListItem">
               <BarChart className="sidebarIcon" />
               PreviewsOrders

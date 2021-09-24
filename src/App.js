@@ -10,6 +10,7 @@ import ProductList from "./pages/productList/ProductList";
 import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
 import Login from "./components/login/login";
+import Saveproducts from "./pages/Saveproducts/Saveproducts";
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route path="/products">
             <ProductList />
+          </Route>
+          <Route path="/saveproducts">
+            <Saveproducts />
           </Route>
           <Route path="/product/:productId">
             <Product />
