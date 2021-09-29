@@ -12,6 +12,7 @@ import NewProduct from "./pages/newProduct/NewProduct";
 // import Login from "./components/login/login";
 import Saveproducts from "./pages/Saveproducts/Saveproducts";
 import Profile from "./pages/Profile/Profile";
+import Edit from "./pages/Edit/Edit";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/profile">
             <Profile />
+          </Route>
+          <Route path="/edit">
+            <Edit />
           </Route>
           <Route path="/users">
             <UserList />
