@@ -13,23 +13,36 @@
     font-weight: 600;
     margin-left: 20px;
     text-align:justify;
+    margin-bottom: inherit;
   }
   
   .productListTable{
     width: 100%;
+    border: 0.5px solid black;
     border-spacing: 17px;
     border-radius: 20px;
+    border-collapse: collapse;
+  }
+
+  thead{
     
+    border-bottom:1px solid rgb(58, 185, 202);
+  }
+  
+  tr:nth-child(even){
+    background-color: rgb(29, 192, 192);
   }
   
   .productListTh{
     text-align: left;
+    
   }
   
   .productListUser{
     display: flex;
     align-items: center;
     font-weight: 600;
+    padding: 10px;
   }
   
   .productListImg {
