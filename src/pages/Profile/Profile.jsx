@@ -14,135 +14,135 @@ export default function Profile() {
     return (
         <div>
            <div className="profile">
-      <div className="userTitleContainer">
-        <h1 className="userTitle">My Profile</h1>
+      <div className="profileTitleContainer">
+        <h1 className="profileTitle">My Profile</h1>
         <Link to="/newUser">
-          <button className="userAddButton">Create</button>
+          <button className="profileAddButton">Create</button>
         </Link>
       </div>
-      <div className="userContainer">
-        <div className="userUpdate">
-          <span className="userUpdateTitle">Edit</span>
-          <form className="userUpdateForm">
-            <div className="userUpdateLeft">
-              <div className="userUpdateItem">
+      <div className="profileContainer">
+        <div className="profileUpdate">
+          <span className="profileUpdateTitle">Edit</span>
+          <form className="profileUpdateForm">
+            <div className="profileUpdateLeft">
+              <div className="profileUpdateItem">
                 <label>Order Created By</label>
                 <input
                   type="text"
                   placeholder="annabeck99"
-                  className="userUpdateInput"
+                  className="profileUpdateInput"
                 />
               </div>
-              <div className="userUpdateItem">
+              <div className="profileUpdateItem">
                 <label>Employee Id</label>
                 <input
                   type="text"
                   placeholder="Anna Becker"
-                  className="userUpdateInput"
+                  className="profileUpdateInput"
                 />
               </div>
-              <div className="userUpdateItem">
+              <div className="profileUpdateItem">
                 <label>Department</label>
                 <input
                   type="text"
                   placeholder="annabeck99@gmail.com"
-                  className="userUpdateInput"
+                  className="profileUpdateInput"
                 />
               </div>
-              <div className="userUpdateItem">
+              <div className="profileUpdateItem">
                 <label>Product Name</label>
                 <input
                   type="text"
                   placeholder=""
-                  className="userUpdateInput"
+                  className="profileUpdateInput"
                 />
               </div>
-              <div className="userUpdateItem">
+              <div className="profileUpdateItem">
                 <label>CAS Number</label>
                 <input
                   type="text"
                   placeholder="New York | USA"
-                  className="userUpdateInput"
+                  className="profileUpdateInput"
                 />
               </div>
-              <div className="userUpdateItem">
+              <div className="profileUpdateItem">
                 <label>Brand</label>
                 <input
                   type="text"
                   placeholder="New York | USA"
-                  className="userUpdateInput"
+                  className="profileUpdateInput"
                 />
               </div>
-              <div className="userUpdateItem">
+              <div className="profileUpdateItem">
                 <label>catalouge Number</label>
                 <input
                   type="text"
                   placeholder="New York | USA"
-                  className="userUpdateInput"
+                  className="profileUpdateInput"
                 />
               </div>
-              <div className="userUpdateItem">
+              <div className="profileUpdateItem">
                 <label>Pack Size</label>
                 <input
                   type="text"
                   placeholder="New York | USA"
-                  className="userUpdateInput"
+                  className="profileUpdateInput"
                 />
               </div>
-              <div className="userUpdateItem">
+              <div className="profileUpdateItem">
                 <label>Order Quantity</label>
                 <input
                   type="text"
                   placeholder="New York | USA"
-                  className="userUpdateInput"
+                  className="profileUpdateInput"
                 />
               </div>
-              <div className="userUpdateItem">
+              <div className="profileUpdateItem">
                 <label>Importance Type</label>
                 <input
                   type="text"
                   placeholder="New York | USA"
-                  className="userUpdateInput"
+                  className="profileUpdateInput"
                 />
               </div>
-              <div className="userUpdateItem">
+              <div className="profileUpdateItem">
                 <label>Product Type</label>
                 <input
                   type="text"
                   placeholder="New York | USA"
-                  className="userUpdateInput"
+                  className="profileUpdateInput"
                 />
               </div>
-              <div className="userUpdateItem">
+              <div className="profileUpdateItem">
                 <label>Vendor Name</label>
                 <input
                   type="text"
                   placeholder="New York | USA"
-                  className="userUpdateInput"
+                  className="profileUpdateInput"
                 />
               </div>
-              <div className="userUpdateItem">
+              <div className="profileUpdateItem">
                 <label>Add Comments</label>
                 <input
                   type="text"
                   placeholder="New York | USA"
-                  className="userUpdateInput"
+                  className="profileUpdateInput"
                 />
               </div>
             </div>
-            <div className="userUpdateRight">
-              <div className="userUpdateUpload">
+            <div className="profileUpdateRight">
+              <div className="profileUpdateUpload">
                 <img
-                  className="userUpdateImg"
+                  className="profileUpdateImg"
                   src="https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                   alt=""
                 />
                 <label htmlFor="file">
-                  <Publish className="userUpdateIcon" />
+                  <Publish className="profileUpdateIcon" />
                 </label>
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
-              <button className="userUpdateButton">Update</button>
+              <button className="profileUpdateButton">Update</button>
             </div>
           </form>
         </div>
