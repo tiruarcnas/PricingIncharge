@@ -17,40 +17,16 @@ export default function Profile() {
       <div className="profileTitleContainer">
         <h1 className="profileTitle">My Profile</h1>
         <Link to="/newUser">
-          <button className="profileAddButton">Create</button>
+          <button className="profileAddButton">Edit</button>
         </Link>
       </div>
       <div className="profileContainer">
         <div className="profileUpdate">
-          <span className="profileUpdateTitle">Edit</span>
+          
           <form className="profileUpdateForm">
             <div className="profileUpdateLeft">
               <div className="profileUpdateItem">
-                <label>Order Created By</label>
-                <input
-                  type="text"
-                  placeholder="annabeck99"
-                  className="profileUpdateInput"
-                />
-              </div>
-              <div className="profileUpdateItem">
-                <label>Employee Id</label>
-                <input
-                  type="text"
-                  placeholder="Anna Becker"
-                  className="profileUpdateInput"
-                />
-              </div>
-              <div className="profileUpdateItem">
-                <label>Department</label>
-                <input
-                  type="text"
-                  placeholder="annabeck99@gmail.com"
-                  className="profileUpdateInput"
-                />
-              </div>
-              <div className="profileUpdateItem">
-                <label>Product Name</label>
+                <label>First Name</label>
                 <input
                   type="text"
                   placeholder=""
@@ -58,77 +34,86 @@ export default function Profile() {
                 />
               </div>
               <div className="profileUpdateItem">
-                <label>CAS Number</label>
+                <label>Last Name</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="profileUpdateInput"
                 />
               </div>
               <div className="profileUpdateItem">
-                <label>Brand</label>
+                <label>Employement ID</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="profileUpdateInput"
                 />
               </div>
               <div className="profileUpdateItem">
-                <label>catalouge Number</label>
+                <label>Designation</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="profileUpdateInput"
                 />
               </div>
               <div className="profileUpdateItem">
-                <label>Pack Size</label>
+                <label>Email</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="profileUpdateInput"
                 />
               </div>
               <div className="profileUpdateItem">
-                <label>Order Quantity</label>
+                <label>Phone Number</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="profileUpdateInput"
                 />
               </div>
               <div className="profileUpdateItem">
-                <label>Importance Type</label>
+                <label>Reporting To</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="profileUpdateInput"
                 />
               </div>
               <div className="profileUpdateItem">
-                <label>Product Type</label>
+                <label>Wing</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="profileUpdateInput"
                 />
               </div>
               <div className="profileUpdateItem">
-                <label>Vendor Name</label>
+                <label>HQ Location</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="profileUpdateInput"
                 />
               </div>
               <div className="profileUpdateItem">
-                <label>Add Comments</label>
+                <label>HQ Address</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="profileUpdateInput"
                 />
               </div>
+              <div className="profileUpdateItem">
+                <label>Blood Group</label>
+                <input
+                  type="text"
+                  placeholder=""
+                  className="profileUpdateInput"
+                />
+              </div>
+              
             </div>
             <div className="profileUpdateRight">
               <div className="profileUpdateUpload">
@@ -142,7 +127,7 @@ export default function Profile() {
                 </label>
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
-              <button className="profileUpdateButton">Update</button>
+              <button className="profileUpdateButton">Create</button>
             </div>
           </form>
         </div>
