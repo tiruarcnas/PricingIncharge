@@ -9,9 +9,9 @@ import NewUser from "./pages/newUser/NewUser";
 import ProductList from "./pages/productList/ProductList";
 import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
-import Login from "./components/login/login";
+// import Login from "./components/login/login";
 import Saveproducts from "./pages/Saveproducts/Saveproducts";
-//import Profile from "./pages/Profile/Profile";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   return (
@@ -22,6 +22,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/profile">
+            <Profile />
           </Route>
           <Route path="/users">
             <UserList />

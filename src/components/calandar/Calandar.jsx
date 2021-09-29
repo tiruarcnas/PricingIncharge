@@ -2,7 +2,7 @@ import React from 'react'
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
 import {useState} from 'react'
-import moment from 'moment'
+// import moment from 'moment'
 import "./calandar.css";
 
 export default function Calandar() {
