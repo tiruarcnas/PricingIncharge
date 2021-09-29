@@ -2,8 +2,8 @@ import React from "react";
 import "./topbar.css";
 import { NotificationsNone, Language, Settings} from "@material-ui/icons";
 //import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import {Dropdown} from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 export default function Topbar() {
   return (
@@ -29,8 +29,8 @@ export default function Topbar() {
     
     </button>
       <div class="dropdown-content">
-            <a href="#">Profile</a>
-            <a href="#">LogOut</a>
+            <Link to="#">Profile</Link>
+            <Link to="#">LogOut</Link>
             
     </div>
   </div> 

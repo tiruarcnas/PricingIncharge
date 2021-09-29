@@ -11,11 +11,11 @@ import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
 import Login from "./components/login/login";
 import Saveproducts from "./pages/Saveproducts/Saveproducts";
+//import Profile from "./pages/Profile/Profile";
 
 function App() {
   return (
     <Router>
-      
       <Topbar />
       <div className="container">
         <Sidebar />
@@ -35,6 +35,9 @@ function App() {
           <Route path="/products">
             <ProductList />
           </Route>
+          {/* <Route path="/profile">
+            <Profile />
+          </Route> */}
           <Route path="/saveproducts">
             <Saveproducts />
           </Route>
