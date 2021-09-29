@@ -13,7 +13,7 @@ export default function User() {
   return (
     <div className="user">
       <div className="userTitleContainer">
-        <h1 className="userTitle">Edit User</h1>
+        <h1 className="userTitle">Edit Saved Order</h1>
         <Link to="/newUser">
           <button className="userAddButton">Create</button>
         </Link>
@@ -57,7 +57,7 @@ export default function User() {
           </div>  */}
         {/* </div> */}
         <div className="userUpdate">
-          <span className="userUpdateTitle">Edit</span>
+          {/* <span className="userUpdateTitle">Edit</span> */}
           <form className="userUpdateForm">
             <div className="userUpdateLeft">
               <div className="userUpdateItem">
