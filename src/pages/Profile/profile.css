@@ -1,8 +1,7 @@
 .profile {
-    flex: 5;
+    flex: 4;
     padding: 20px;
-    /* max-width: 194%; */
-  }
+}
   
   .profileTitleContainer {
     display: flex;

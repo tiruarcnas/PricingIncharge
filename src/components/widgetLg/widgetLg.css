@@ -65,9 +65,8 @@
   font-weight: 900;
   border-radius: 6px;
   padding: 5px 7px;
-   
-  
- 
+  margin-left: 45%;
+  border: none; 
 }
 
 .widgetLgbutton:hover{

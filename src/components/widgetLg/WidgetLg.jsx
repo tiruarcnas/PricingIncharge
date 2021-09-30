@@ -1,4 +1,5 @@
 import "./widgetLg.css";
+import { Link } from "react-router-dom";
 
 export default function WidgetLg() {
   const Button = ({ type }) => {
@@ -88,9 +89,12 @@ export default function WidgetLg() {
           </td>
           <td className="widgetLgAmount">Gaseous state </td>
         </tr>
-        <button className="widgetLgbutton"> View More </button>
+        
       </table>
-     
+      {/* <button className="widgetLgbutton"> View More </button> */}
+      <Link to="/products" >
+      <button className="widgetLgbutton"> View More </button>
+        </Link>
     </div>
   );
 }
