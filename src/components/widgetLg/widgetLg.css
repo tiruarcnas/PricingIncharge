@@ -1,6 +1,6 @@
 .widgetLg {
   width: 100%;
-  flex: 5;
+  flex: 4;
   border-radius: 20px;
   -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
@@ -65,9 +65,8 @@
   font-weight: 900;
   border-radius: 6px;
   padding: 5px 7px;
-   
-  
- 
+  margin-left: 45%;
+  border: none; 
 }
 
 .widgetLgbutton:hover{

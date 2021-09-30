@@ -1,13 +1,14 @@
 import React from "react";
 import "./topbar.css";
 import { NotificationsNone, Language, Settings} from "@material-ui/icons";
+import { Link } from "react-router-dom";
 //import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 // import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 // import {Dropdown} from 'react-bootstrap';
 
 export default function Topbar() {
   return (
-    <div className="topbar">
+    <div className="topbar" >
       <div className="topbarWrapper">
         <div className="topLeft">
           <span className="logo">Inventoryadmin</span>
@@ -29,8 +30,15 @@ export default function Topbar() {
     
     </button>
       <div class="dropdown-content">
-            <a href="/profile">Profile</a>
-            <a href="/">LogOut</a>
+            {/* <a href="/profile">Profile</a> */}
+            <Link to="/profile" className="a">
+          Profile
+        </Link>
+            {/* <a href="/">LogOut</a> */}
+            <Link to="#" className="a">
+          Logout
+        </Link>
+            
             
     </div>
   </div> 

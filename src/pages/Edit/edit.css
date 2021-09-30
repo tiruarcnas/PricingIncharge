@@ -1,16 +1,17 @@
-.profile {
+.edit {
     flex: 4;
     padding: 20px;
-}
+    
+  }
   
-  .profileTitleContainer {
+  .editTitleContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* max-width: 194%; */
   }
   
-  .profileAddButton {
+  .editAddButton {
     width: 80px;
     border: none;
     padding: 5px;
@@ -21,19 +22,19 @@
     font-size: 16px;
   }
   
-  .profileContainer {
+  .editContainer {
     display: flex;
-    margin-top: 20px;
+    margin-top : 20px;
   }
   
-  .profileShow {
+  /* .editShow {
     flex: 1;
     padding: 20px;
     -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
-  }
+  } */
   
-  .profileUpdate{
+  .editUpdate{
     flex: 2;
     padding: 20px;
     -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
@@ -41,81 +42,83 @@
     max-width:100%;
   }
   
-  .profileShowTop {
+  /* .editShowTop {
     display: flex;
     align-items: center;
   }
   
-  .profileShowImg {
+  .editShowImg {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
   }
   
-  .profileShowTopTitle {
+  .editShowTopTitle {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
   }
   
-  .profileShowUsername {
+  .editShowUsername {
     font-weight: 600;
   }
   
-  .profileShowUserTitle {
+  .editShowUserTitle {
     font-weight: 300;
   }
   
-  .profileShowBottom{
+  .editShowBottom{
       margin-top: 20px;
   }
   
-  .profileShowTitle {
+  .editShowTitle {
     font-size: 14px;
     font-weight: 600;
     color: rgb(175, 170, 170);
   }
   
-  .profileShowInfo{
+  .editShowInfo{
       display: flex;
       align-items: center;
       margin: 20px 0px;
       color: #444;
   }
   
-  .profileShowIcon{
+  .editShowIcon{
       font-size: 16px !important;
   }
   
-  .profileShowInfoTitle{
+  .editShowInfoTitle{
       margin-left: 10px;
-  }
+  } */
+
   
-  .profileUpdateTitle{
+  
+  .editUpdateTitle{
       font-size: 24px;
       font-weight: 600;
   }
   
-  .profileUpdateForm{
+  .editUpdateForm{
       display: flex;
       justify-content: space-between;
       margin-top: 20px;
   }
   
-  .profileUpdateItem{
+  .editUpdateItem{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       margin-top: 8px;
   }
   
-  .profileUpdateItem>label{
+  .editUpdateItem>label{
       margin-bottom: 0px;
       font-size: 14px;
   }
   
-  .profileUpdateInput{
+  .editUpdateInput{
       border: none;
       width: 250px;
       height: 30px;
@@ -123,24 +126,24 @@
       border-bottom: 1px solid gray;
   }
   
-  .profileUpdateRight{
+  .editUpdateRight{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
   }
 
-  .profileUpdateLeft{
+  .editUpdateLeft{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-  .profileUpdateUpload{
+  .editUpdateUpload{
       display: flex;
       align-items: center;
   }
   
-  .profileUpdateImg{
+  .editUpdateImg{
       width: 100px;
       height: 100px;
       border-radius: 10px;
@@ -149,11 +152,11 @@
       margin-left: 538px;
   }
   
-  .profileUpdateIcon{
+  .editUpdateIcon{
       cursor: pointer;
   }
   
-  .profileUpdateButton{
+  .editUpdateButton{
       width: 15%;
       border-radius: 5px;
       border: none;
