@@ -42,9 +42,7 @@ function App() {
           <Route path="/products">
             <ProductList />
           </Route>
-          {/* <Route path="/profile">
-            <Profile />
-          </Route> */}
+         
           <Route path="/saveproducts">
             <Saveproducts />
           </Route>

@@ -34,10 +34,10 @@ export default function Topbar() {
             <Link to="/profile" className="a">
           Profile
         </Link>
-            {/* <a href="/">LogOut</a> */}
-            <Link to="#" className="a">
+            <a href="/">LogOut</a> 
+            {/* <Link to="#" className="a">
           Logout
-        </Link>
+        </Link> */}
             
             
     </div>
