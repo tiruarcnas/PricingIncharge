@@ -9,7 +9,8 @@ export default function Saveproducts() {
         <div className="saveProducts">
           <h3 className="saveProductsTitle">Previwe Orders</h3>
           <table className="saveProductsTable">
-            <tr className="saveProductsTr">
+           <thead>
+           <tr className="saveProductsTr">
             <th className="saveProductsTh">OrderID</th>
               <th className="saveProductsTh">Chemical Name</th>
               <th className="saveProductsTh">Quantity</th>
@@ -19,6 +20,7 @@ export default function Saveproducts() {
               <th className="saveProductsTh">Order Status</th>
               <th className="saveProductsTh">Product Details</th>
             </tr>
+           </thead>
             <tr className="saveProductsTr">
               <td className="saveProductsUser">
                 <span className="saveProductsName">210920210001</span>

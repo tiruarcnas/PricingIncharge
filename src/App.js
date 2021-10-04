@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Login from './components/login/Login';
+import Regstion from './components/login/Regstion';
+import Routing from './Routing';
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Login />
+        </Route>
+        <Route exact path="/Regstion">
+          <Regstion />
+        </Route>
+        <Routing />
+      </Switch>
+=======
 import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
 import "./App.css";
@@ -42,7 +61,10 @@ function App() {
           <Route path="/products">
             <ProductList />
           </Route>
+<<<<<<< HEAD
          
+=======
+>>>>>>> 94a402a20a5a874d6b0462d86913df100ac1fa0a
           <Route path="/saveproducts">
             <Saveproducts />
           </Route>
@@ -54,6 +76,7 @@ function App() {
           </Route>
         </Switch>
       </div>
+>>>>>>> feacae5df20e93055d45000789d5a45351e11720
     </Router>
   );
 }

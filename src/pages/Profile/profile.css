@@ -1,9 +1,8 @@
 .profile {
-    flex: 5;
+    flex: 4;
     padding: 20px;
   
-  }
-  
+  }  
   .profileTitleContainer {
     display: flex;
     align-items: center;
