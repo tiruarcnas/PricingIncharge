@@ -35,76 +35,8 @@ export default function ProductList() {
           </td>
           <td className="productListAmount">Gaseous state </td>
         </tr>
-        <tr className="productListTr">
-          <td className="productListUser">
-            <span className="productListName">210920210001</span>
-          </td>
-          <td className="productListDate">Hydrogen</td>
-          <td className="productListAmount">25 kg</td>
-          <td className="productListStatus">CAS 001</td>
-          <td className="productListDate">A</td>
-          <td className="productListAmount">Arcnas</td>
-          <td className="productListStatus">
-            <Button type="Approved" />
-          </td>
-          <td className="productListAmount">Gaseous state </td>
-        </tr>
-        <tr className="productListTr">
-          <td className="productListUser">
-            <span className="productListName">210920210001</span>
-          </td>
-          <td className="productListDate">Hydrogen</td>
-          <td className="productListAmount">25 kg</td>
-          <td className="productListStatus">CAS 001</td>
-          <td className="productListDate">A</td>
-          <td className="productListAmount">Arcnas</td>
-          <td className="productListStatus">
-            <Button type="Approved" />
-          </td>
-          <td className="productListAmount">Gaseous state </td>
-        </tr>
-        <tr className="productListTr">
-          <td className="productListUser">
-            <span className="productListName">210920210001</span>
-          </td>
-          <td className="productListDate">Hydrogen</td>
-          <td className="productListAmount">25 kg</td>
-          <td className="productListStatus">CAS 001</td>
-          <td className="productListDate">A</td>
-          <td className="productListAmount">Arcnas</td>
-          <td className="productListStatus">
-            <Button type="Approved" />
-          </td>
-          <td className="productListAmount">Gaseous state </td>
-        </tr>
-        <tr className="productListTr">
-          <td className="productListUser">
-            <span className="productListName">210920210001</span>
-          </td>
-          <td className="productListDate">Hydrogen</td>
-          <td className="productListAmount">25 kg</td>
-          <td className="productListStatus">CAS 001</td>
-          <td className="productListDate">A</td>
-          <td className="productListAmount">Arcnas</td>
-          <td className="productListStatus">
-            <Button type="Approved" />
-          </td>
-          <td className="productListAmount">Gaseous state </td>
-        </tr>
-        <tr className="productListTr">
-          <td className="productListUser">
-            <span className="productListName">210920210001</span>
-          </td>
-          <td className="productListDate">Hydrogen</td>
-          <td className="productListAmount">25 kg</td>
-          <td className="productListStatus">CAS 001</td>
-          <td className="productListDate">A</td>
-          <td className="productListAmount">Arcnas</td>
-          <td className="productListStatus">
-            <Button type="Approved" />
-          </td>
-          <td className="productListAmount">Gaseous state </td>
-        </tr>
+       
+       
       </table>
     </div>
   )

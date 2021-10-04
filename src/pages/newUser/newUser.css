@@ -19,6 +19,22 @@
   margin-right: 20px;
 }
 
+.newUserItem1 {
+  width: 987px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+
+}
+
+.newUserItem2 {
+  width: 148px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 26px;
+}
+
 .newUserItem> ::placeholder{
   width: 100%;
 }
@@ -63,7 +79,7 @@
 
 
 .newUserButton{
-    width: 200px;
+    width: 130px;
     border: none;
     background-color: darkblue;
     color: white;
@@ -72,6 +88,13 @@
     border-radius: 10px;
     margin-top: 30px;
     cursor: pointer;
-    justify-content: space-between;
-    align-content: space-between;
+    /* justify-content: space-between; */
+    /* align-content: space-between; */
+}
+.newUserTitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 20px;
+  text-align:justify;
+  margin-bottom: inherit;
 }
