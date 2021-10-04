@@ -14,7 +14,11 @@ function App() {
           <Regstion />
         </Route>
         <Routing />
+<<<<<<< HEAD
+      </Switch>   
+=======
       </Switch>
+>>>>>>> 9e403db0192007ea4071b0c0c95c48618d92c8dc
 </Router>
   );
 }
