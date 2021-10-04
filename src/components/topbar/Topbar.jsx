@@ -26,6 +26,7 @@ export default function Topbar() {
             <Settings />
           </div>
           <div class="dropdown">
+<<<<<<< HEAD
             <button class="dropbtn">InventoryIncharge</button>
             <div class="dropdown-content">
               <a href="/profile">Profile</a>
@@ -38,6 +39,24 @@ export default function Topbar() {
               </Link> */}
             </div>
           </div>
+=======
+    <button class="dropbtn">InventoryIncharge 
+    
+    </button>
+      <div class="dropdown-content">
+            {/* <a href="/profile">Profile</a> */}
+            <Link to="/profile" className="a">
+          Profile
+        </Link>
+            <a href="/">LogOut</a> 
+            {/* <Link to="#" className="a">
+          Logout
+        </Link> */}
+            
+            
+    </div>
+  </div> 
+>>>>>>> d5903859dccd413878c64ac178170211fa36b04f
           {/* <img src="https://images.pexels.com/photos/1526814/pexels-photo-1526814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="topAvatar" /> */}
         </div>
       </div>

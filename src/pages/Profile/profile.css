@@ -1,8 +1,8 @@
 .profile {
     flex: 4;
     padding: 20px;
-}
   
+  }  
   .profileTitleContainer {
     display: flex;
     align-items: center;
@@ -101,6 +101,7 @@
       display: flex;
       justify-content: space-between;
       margin-top: 20px;
+      width: 100%;
   }
   
   .profileUpdateItem{
@@ -113,6 +114,7 @@
   .profileUpdateItem>label{
       margin-bottom: 0px;
       font-size: 14px;
+      margin-bottom: 2rem;
   }
   
   .profileUpdateInput{

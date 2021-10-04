@@ -1,13 +1,34 @@
 import "./newUser.css";
 import { Link } from "react-router-dom";
+import { Component } from "react";
 
-export default function NewUser() {
+class NewUser extends Component {
+    constructor(props){
+      super(props)
+      this.state={
+        ProductName: "",
+        CASNumber: "",
+        Brand: "",
+        CatalogueNumber: "",
+        PackSize: "",
+        OrderQuantity: "",
+        ImportanceType:"",
+        ProductType:"",
+        VendorName:"",
+        AddComments:""
+      }
+      // handleProductNameChange (e){
+      //   this.setState({ProductName:e.target.value})
+      // }
+    }
+
+  render(){
   return (
     
     <div className="newUser">
       <div className="userShow">
       <h1 className="newUserTitle">Create Order</h1>
-      <form className="newUserForm">
+      <form  onSubmit={this.Create} method="post" className="newUserForm">
         <div className="newUserItem">
           <label>Order Created By</label>
           <input type="text" placeholder="john" />
@@ -22,11 +43,11 @@ export default function NewUser() {
         </div>
         <div className="newUserItem">
           <label>Product Name</label>
-          <input type="text" placeholder="" />
+          <input type="text" name="ProductName" onChange={this.handleProductNameChange} value={this.state.ProductName} placeholder="ProductName" />
         </div>
         <div className="newUserItem">
           <label>CAS Number</label>
-          <input type="text" placeholder="" />
+          <input type="text"  placeholder="CASNumber"/>
         </div>
         <div className="newUserItem">
           <label>Brand</label>
@@ -90,4 +111,6 @@ export default function NewUser() {
     </div>
     </div>
   );
+      }
 }
+export default NewUser;
