@@ -1,5 +1,5 @@
 import * as React from 'react';
-import "./appbar.css";
+import './appbar.css';
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MuiDrawer from '@mui/material/Drawer';
@@ -184,8 +184,8 @@ export default function MiniDrawer() {
               <ul className="sidebarList">
                 <Link to="/home" className="link">
                   <li className="sidebarListItem active">
-                    <HomeIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
-                    Home
+                    <HomeIcon className="sidebarIcon" />
+                    &nbsp;&nbsp;&nbsp; Home
                   </li>
                 </Link>
               </ul>
@@ -195,32 +195,32 @@ export default function MiniDrawer() {
               <ul className="sidebarList">
                 <Link to="/newUser" className="link">
                   <li className="sidebarListItem">
-                    <ListAltIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
-                    CreateOrders
+                    <ListAltIcon className="sidebarIcon" />
+                    &nbsp;&nbsp;&nbsp; CreateOrders
                   </li>
                 </Link>
                 <Link to="/users" className="link">
                   <li className="sidebarListItem">
-                    <SaveIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
-                    SavedOrders
+                    <SaveIcon className="sidebarIcon" />
+                    &nbsp;&nbsp;&nbsp; SavedOrders
                   </li>
                 </Link>
                 <Link to="/products" className="link">
                   <li className="sidebarListItem">
-                    <RestoreIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
-                    ActiveOrders
+                    <RestoreIcon className="sidebarIcon" />
+                    &nbsp;&nbsp;&nbsp; ActiveOrders
                   </li>
                 </Link>
                 <Link to="/saveproducts" className="link">
                   <li className="sidebarListItem">
-                    <FastRewindIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
-                    PreviewsOrders
+                    <FastRewindIcon className="sidebarIcon" />
+                    &nbsp;&nbsp;&nbsp; PreviewsOrders
                   </li>
                 </Link>
                 <Link to="/newproduct" className="link">
                   <li className="sidebarListItem">
-                    <AlarmIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
-                    Set Reminders
+                    <AlarmIcon className="sidebarIcon" />
+                    &nbsp;&nbsp;&nbsp; Set Reminders
                   </li>
                 </Link>
               </ul>

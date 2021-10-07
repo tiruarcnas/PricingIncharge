@@ -5,6 +5,7 @@ const router = express.Router();
 // Load models
 const Profile = require('../models/Profile');
 const CreateOrder = require('../models/CreateOrder');
+const SavedOrder = require('../models/SavedOrder');
 
 // ADD user
 router.post('/profile', function (req, res) {
@@ -77,6 +78,37 @@ createorder.save(function(err){
         }
     });
 });
+
+
+
+// Saved Orders
+router.post('/savedorder', function (req, res) {
+    //const CreateOrder = require('../models/CreateOrder');
+    let savedorder = new SavedOrder();
+    savedorder.ProductName = req.body.ProductName;
+    savedorder.CASNumber = req.body.CASNumber;
+    savedorder.Brand = req.body.Brand;
+    savedorder.CatalogueNumber = req.body.CatalogueNumber;
+    savedorder.PackSize = req.body.PackSize;
+    savedorder.OrderQuantity = req.body.OrderQuantity;
+    savedorder.ImportanceType = req.body.ImportanceType;
+    savedorder.ProductType = req.body.ProductType;
+    savedorder.VendorName = req.body.VendorName;
+    savedorder.AddComments = req.body.AddComments;
+    savedorder.Status = req.body.Status;
+    savedorder.save(function(err){
+            if(err){
+                //console.log(createorder);
+                console.log(err);
+                res.json({msg: "failed"})
+            }
+            else{
+                res.json(savedorder);
+            }
+        });
+    });
+    
+
 
 // GET ALL 
 router.get('/orderget', function(req, res){
