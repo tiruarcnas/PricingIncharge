@@ -5,7 +5,6 @@ import axios from 'axios';
 import { Redirect } from 'react-router';
 
 class NewUser extends Component {
-   guid = parseInt(Math.random() * 36);
     constructor(props){
       super(props)
       this.state={
@@ -91,7 +90,14 @@ this.addCreate = this.addCreate.bind(this);
       })
       .catch(err => { console.log(err) });
     }
-   
+
+        //edit data
+        editUser()  {
+    
+          //this.props.history.push(`/Edit/${b}`);
+          alert("hiii");
+         }
+    
   render(){
   return (
     
@@ -172,7 +178,7 @@ this.addCreate = this.addCreate.bind(this);
       
         <div className="newUserItem2">
         <Link to="/users">
-          <button className="newUserButton">Save Order</button>      
+          <button className="newUserButton" onClick={this.editUser}>Save Order</button>      
         </Link>
         </div>
       </form>
