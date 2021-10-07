@@ -103,80 +103,79 @@ import {
     return (
         <div>
            <div className="profile">
-      <div className="profileTitleContainer">
-        <h1 className="profileTitle">My Profile</h1>
-        <Link to="/edit">
-          <button className="profileAddButton">Edit</button>
-        </Link>
-      </div>
-      <div className="profileContainer">
-        <div className="profileUpdate">
-          
-          <form onSubmit={this.addUser} method="post" className="profileUpdateForm">
-            <div className="profileUpdateLeft">
-              <div className="profileUpdateItem">
-                <label>First Name</label>
-                <input
-                  type="text"
-                  placeholder=""
-                  className="profileUpdateInput"
-                  name="FirstName"
-                  onChange={this.handleFirstNameChange} value={this.state.FirstName}
-                />
-              </div>
-              <div className="profileUpdateItem">
-                <label>Last Name</label>
-                <input
-                  type="text"
-                  placeholder=""
-                  className="profileUpdateInput"
-                  name="LastName"
-                  onChange={this.handleLastNameChange} value={this.state.LastName}
-                />
-              </div>
-              <div className="profileUpdateItem">
-                <label>Employement ID</label>
-                <input
-                  type="text"
-                  placeholder=""
-                  className="profileUpdateInput"
-                  name="EmployeeId"
-                  onChange={this.handleEmployeeIdChange} value={this.state.EmployeeId}
-                />
-              </div>
-              <div className="profileUpdateItem">
-                <label>Designation</label>
-                <input
-                  type="text"
-                  placeholder=""
-                  className="profileUpdateInput"
-                  name="Designation"
-                  onChange={this.handleDesignationChange} value={this.state.Designation}
-                />
-              </div>
-              <div className="profileUpdateItem">
-                <label>Email</label>
-                <input
-                  type="text"
-                  placeholder=""
-                  className="profileUpdateInput"
-                  name="Email"
-                  onChange={this.handleEmailChange} value={this.state.Email}
-                />
-              </div>
-              <div className="profileUpdateItem">
-                <label>Phone Number</label>
-                <input
-                  type="text"
-                  placeholder=""
-                  className="profileUpdateInput"
-                  name="PhoneNumber"
-                  onChange={this.handlePhoneNumberChange} value={this.state.PhoneNumber}
-                />
-              </div>
-              <div className="profileUpdateItem">
-                <label>Reporting To</label>
-                <input
+            <div className="profileTitleContainer">
+              <h1 className="profileTitle">My Profile</h1>
+                <Link to="/edit">
+                 <button className="profileAddButton">Edit</button>
+                </Link>
+            </div>
+            <div className="profileContainer">
+                <div className="profileUpdate">
+                  <form onSubmit={this.addUser} method="post" className="profileUpdateForm">
+                    <div className="profileUpdateLeft">
+                      <div className="profileUpdateItem">
+                        <label>First Name</label>
+                          <input
+                              type="text"
+                              placeholder=""
+                              className="profileUpdateInput"
+                              name="FirstName"
+                              onChange={this.handleFirstNameChange} value={this.state.FirstName}
+                          />
+                      </div>
+                    <div className="profileUpdateItem">
+                        <label>Last Name</label>
+                          <input
+                              type="text"
+                              placeholder=""
+                              className="profileUpdateInput"
+                              name="LastName"
+                              onChange={this.handleLastNameChange} value={this.state.LastName}
+                          />
+                    </div>
+                    <div className="profileUpdateItem">
+                        <label>Employement ID</label>
+                          <input
+                              type="text"
+                              placeholder=""
+                              className="profileUpdateInput"
+                              name="EmployeeId"
+                              onChange={this.handleEmployeeIdChange} value={this.state.EmployeeId}
+                          />
+                    </div>
+                    <div className="profileUpdateItem">
+                        <label>Designation</label>
+                          <input
+                              type="text"
+                              placeholder=""
+                              className="profileUpdateInput"
+                              name="Designation"
+                              onChange={this.handleDesignationChange} value={this.state.Designation}
+                          />
+                    </div>
+                    <div className="profileUpdateItem">
+                        <label>Email</label>
+                          <input
+                              type="text"
+                              placeholder=""
+                              className="profileUpdateInput"
+                              name="Email"
+                              onChange={this.handleEmailChange} value={this.state.Email}
+                          />
+                    </div>
+                    <div className="profileUpdateItem">
+                        <label>Phone Number</label>
+                          <input
+                              type="text"
+                              placeholder=""
+                              className="profileUpdateInput"
+                              name="PhoneNumber"
+                              onChange={this.handlePhoneNumberChange} value={this.state.PhoneNumber}
+                          />
+                    </div>
+                    <div className="profileUpdateItem">
+                        <label>Reporting To</label>
+                            <input
                   type="text"
                   placeholder=""
                   className="profileUpdateInput"
@@ -224,9 +223,11 @@ import {
                   onChange={this.handleBloodGroupChange} value={this.state.BloodGroup}
                 />
               </div>
+
+              <button type ="submit" className="profileUpdateButton">Save</button>
               
             </div>
-            <div className="profileUpdateRight">
+            {/* <div className="profileUpdateRight">
               <div className="profileUpdateUpload">
                 <img
                   className="profileUpdateImg"
@@ -239,7 +240,7 @@ import {
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
               <button type ="submit" className="profileUpdateButton">Create</button>
-            </div>
+            </div> */}
           </form>
           {this.state.redirect && (
                 <Redirect to={'/users'}/>

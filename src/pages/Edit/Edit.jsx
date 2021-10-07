@@ -2,11 +2,7 @@ import React from 'react'
 import "./edit.css";
 //import { Link } from "react-router-dom";
 import {
-    // CalendarToday,
-    // LocationSearching,
-    // MailOutline,
-    // PermIdentity,
-    // PhoneAndroid,
+   
     Publish,
   } from "@material-ui/icons";
 
@@ -114,9 +110,9 @@ export default function Edit() {
                   className="editUpdateInput"
                 />
               </div>
-              
+              <button className="editUpdateButton">Update</button>
             </div>
-            <div className="editUpdateRight">
+            {/* <div className="editUpdateRight">
               <div className="editUpdateUpload">
                 <img
                   className="editUpdateImg"
@@ -129,7 +125,7 @@ export default function Edit() {
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
               <button className="editUpdateButton">Update</button>
-            </div>
+            </div> */}
           </form>
         </div>
       </div>

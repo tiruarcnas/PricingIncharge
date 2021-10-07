@@ -1,5 +1,5 @@
 .newUser {
-  width: 100%;
+  width: 300%;
   flex: 4;
   margin: 20px;
   border-radius: 20px;
@@ -19,7 +19,27 @@
   margin-right: 20px;
 }
 
+<<<<<<< HEAD
 .newUserItem > ::placeholder {
+=======
+.newUserItem1 {
+  width: 987px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+
+}
+
+.newUserItem2 {
+  width: 148px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 26px;
+}
+
+.newUserItem> ::placeholder{
+>>>>>>> b5b39c48ad2a43d3eafb88bae03c5d934c6abb95
   width: 100%;
 }
 
@@ -59,6 +79,7 @@
   margin: 20px;
 }
 
+<<<<<<< HEAD
 .newUserButton {
   width: 200px;
   border: none;
@@ -72,3 +93,27 @@
   justify-content: space-between;
   align-content: space-between;
 }
+=======
+
+
+.newUserButton{
+    width: 130px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    /* justify-content: space-between; */
+    /* align-content: space-between; */
+}
+.newUserTi{
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 20px;
+  text-align:justify;
+  margin-bottom: inherit;
+}
+>>>>>>> b5b39c48ad2a43d3eafb88bae03c5d934c6abb95

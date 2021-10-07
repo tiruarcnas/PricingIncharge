@@ -1,10 +1,26 @@
 import "./productList.css";
+import React ,{Component} from 'react';
+import axios from "axios";
+class ProductList extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { 
+      order: []
+    }
+  }
 
-
-export default function ProductList() {
+componentDidMount() {
+    axios.get('http://localhost:9000/api/orderget')
+    .then(res => {
+        console.log(res);
+        this.setState({ order: res.data })
+    });
+}
+  render(){
   const Button = ({ type }) => {
     return <button className={"productListButton " + type}>{type}</button>;
   };
+  var data =this.state.order;
   return (
     <div className="productList">
       <h3 className="productListTitle">ActiveOrders</h3>
@@ -21,91 +37,32 @@ export default function ProductList() {
           <th className="productListTh">Product Details</th>
         </tr>
         </thead>
-        <tr className="productListTr">
+        {data.length > 0 ? 
+                    data.map((user, i) => {                        
+                        return (
+                          <tbody>
+        <tr className="productListTr1">
           <td className="productListUser">
-            <span className="productListName">210920210001</span>
+            <span className="productListName">{user._id}</span>
           </td>
-          <td className="productListDate">Hydrogen</td>
-          <td className="productListAmount">25 kg</td>
-          <td className="productListStatus">CAS 001</td>
-          <td className="productListDate">A</td>
-          <td className="productListAmount">Arcnas</td>
+          <td className="productListDate">{user.ProductName}</td>
+          <td className="productListAmount">{user.PackSize}</td>
+          <td className="productListStatus">{user.CASNumber}</td>
+          <td className="productListDate">{user.ImportanceType}</td>
+          <td className="productListAmount">{user.VendorName}</td>
           <td className="productListStatus">
-            <Button type="Approved" />
+            <Button type={user.Status}/>
           </td>
           <td className="productListAmount">Gaseous state </td>
         </tr>
-        <tr className="productListTr">
-          <td className="productListUser">
-            <span className="productListName">210920210001</span>
-          </td>
-          <td className="productListDate">Hydrogen</td>
-          <td className="productListAmount">25 kg</td>
-          <td className="productListStatus">CAS 001</td>
-          <td className="productListDate">A</td>
-          <td className="productListAmount">Arcnas</td>
-          <td className="productListStatus">
-            <Button type="Approved" />
-          </td>
-          <td className="productListAmount">Gaseous state </td>
-        </tr>
-        <tr className="productListTr">
-          <td className="productListUser">
-            <span className="productListName">210920210001</span>
-          </td>
-          <td className="productListDate">Hydrogen</td>
-          <td className="productListAmount">25 kg</td>
-          <td className="productListStatus">CAS 001</td>
-          <td className="productListDate">A</td>
-          <td className="productListAmount">Arcnas</td>
-          <td className="productListStatus">
-            <Button type="Approved" />
-          </td>
-          <td className="productListAmount">Gaseous state </td>
-        </tr>
-        <tr className="productListTr">
-          <td className="productListUser">
-            <span className="productListName">210920210001</span>
-          </td>
-          <td className="productListDate">Hydrogen</td>
-          <td className="productListAmount">25 kg</td>
-          <td className="productListStatus">CAS 001</td>
-          <td className="productListDate">A</td>
-          <td className="productListAmount">Arcnas</td>
-          <td className="productListStatus">
-            <Button type="Approved" />
-          </td>
-          <td className="productListAmount">Gaseous state </td>
-        </tr>
-        <tr className="productListTr">
-          <td className="productListUser">
-            <span className="productListName">210920210001</span>
-          </td>
-          <td className="productListDate">Hydrogen</td>
-          <td className="productListAmount">25 kg</td>
-          <td className="productListStatus">CAS 001</td>
-          <td className="productListDate">A</td>
-          <td className="productListAmount">Arcnas</td>
-          <td className="productListStatus">
-            <Button type="Approved" />
-          </td>
-          <td className="productListAmount">Gaseous state </td>
-        </tr>
-        <tr className="productListTr">
-          <td className="productListUser">
-            <span className="productListName">210920210001</span>
-          </td>
-          <td className="productListDate">Hydrogen</td>
-          <td className="productListAmount">25 kg</td>
-          <td className="productListStatus">CAS 001</td>
-          <td className="productListDate">A</td>
-          <td className="productListAmount">Arcnas</td>
-          <td className="productListStatus">
-            <Button type="Approved" />
-          </td>
-          <td className="productListAmount">Gaseous state </td>
-        </tr>
+           
+       </tbody>
+       )}
+       ):null}
       </table>
     </div>
+    
   )
 }
+}
+export default ProductList;

@@ -1,11 +1,13 @@
 .profile {
-    flex: 4;
-    padding: 20px;
-  
+  width: 250%;
+  flex: 4;
+  padding: 20px;
+  border-radius: 20px;
   }  
   .profileTitleContainer {
     display: flex;
-    align-items: center;
+
+    /* align-items: center; */
     justify-content: space-between;
     /* max-width: 194%; */
   }
@@ -24,14 +26,9 @@
   .profileContainer {
     display: flex;
     margin-top: 20px;
+    flex-direction: column;
   }
   
-  .profileShow {
-    flex: 1;
-    padding: 20px;
-    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
-  }
   
   .profileUpdate{
     flex: 2;
@@ -39,59 +36,10 @@
     -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
     max-width:100%;
-  }
-  
-  .profileShowTop {
-    display: flex;
-    align-items: center;
-  }
-  
-  .profileShowImg {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .profileShowTopTitle {
-    display: flex;
     flex-direction: column;
-    margin-left: 20px;
   }
   
-  .profileShowUsername {
-    font-weight: 600;
-  }
-  
-  .profileShowUserTitle {
-    font-weight: 300;
-  }
-  
-  .profileShowBottom{
-      margin-top: 20px;
-  }
-  
-  .profileShowTitle {
-    font-size: 14px;
-    font-weight: 600;
-    color: rgb(175, 170, 170);
-  }
-  
-  .profileShowInfo{
-      display: flex;
-      align-items: center;
-      margin: 20px 0px;
-      color: #444;
-  }
-  
-  .profileShowIcon{
-      font-size: 16px !important;
-  }
-  
-  .profileShowInfoTitle{
-      margin-left: 10px;
-  }
-  
+
   .profileUpdateTitle{
       font-size: 24px;
       font-weight: 600;
@@ -114,15 +62,15 @@
   .profileUpdateItem>label{
       margin-bottom: 0px;
       font-size: 14px;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
   }
   
   .profileUpdateInput{
-      border: none;
       width: 250px;
       height: 30px;
       margin-left: 50px;
-      border-bottom: 1px solid gray;
+      border-radius: 5px;
+      border: 1px solid gray;
   }
   
   .profileUpdateRight{
@@ -164,5 +112,5 @@
       background-color: darkblue;
       color: white;
       font-weight: 600;
-      margin-left: 85% ;
+      margin-left: 268% ;
   }

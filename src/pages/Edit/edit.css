@@ -1,7 +1,7 @@
 .edit {
     flex: 4;
     padding: 20px;
-    
+    width: 250%;
   }
   
   .editTitleContainer {
@@ -42,59 +42,6 @@
     max-width:100%;
   }
   
-  /* .editShowTop {
-    display: flex;
-    align-items: center;
-  }
-  
-  .editShowImg {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .editShowTopTitle {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-  }
-  
-  .editShowUsername {
-    font-weight: 600;
-  }
-  
-  .editShowUserTitle {
-    font-weight: 300;
-  }
-  
-  .editShowBottom{
-      margin-top: 20px;
-  }
-  
-  .editShowTitle {
-    font-size: 14px;
-    font-weight: 600;
-    color: rgb(175, 170, 170);
-  }
-  
-  .editShowInfo{
-      display: flex;
-      align-items: center;
-      margin: 20px 0px;
-      color: #444;
-  }
-  
-  .editShowIcon{
-      font-size: 16px !important;
-  }
-  
-  .editShowInfoTitle{
-      margin-left: 10px;
-  } */
-
-  
-  
   .editUpdateTitle{
       font-size: 24px;
       font-weight: 600;
@@ -110,20 +57,22 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      margin-top: 8px;
+      
   }
   
   .editUpdateItem>label{
       margin-bottom: 0px;
       font-size: 14px;
+      margin-bottom: 1.5rem;
   }
   
   .editUpdateInput{
-      border: none;
+      /* border: none; */
       width: 250px;
       height: 30px;
       margin-left: 50px;
-      border-bottom: 1px solid gray;
+      border-radius: 5px;
+      border: 1px solid gray;
   }
   
   .editUpdateRight{
@@ -165,5 +114,6 @@
       background-color: darkblue;
       color: white;
       font-weight: 600;
-      margin-left: 85% ;
+      margin-top: 10px;
+      margin-left: 268% ;
   }
