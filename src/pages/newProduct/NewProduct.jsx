@@ -2,8 +2,10 @@ import "./newProduct.css";
 
 export default function NewProduct() {
   return (
-    <div className="newProduct">
+    <div>
       <h1 className="addProductTitle">Set Reminder</h1>
+    <div className="newProduct">
+      
       <form className="addProductForm">
         <div className="addProductItem">
           <label>Add Title</label>
@@ -31,6 +33,7 @@ export default function NewProduct() {
         </div>
         <button className="addProductButton">Create</button>
       </form>
+    </div>
     </div>
   );
 }

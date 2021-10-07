@@ -1,11 +1,5 @@
 import React from 'react'
 import "./edit.css";
-//import { Link } from "react-router-dom";
-import {
-   
-    Publish,
-  } from "@material-ui/icons";
-
 
 export default function Edit() {
     return (
@@ -13,9 +7,6 @@ export default function Edit() {
            <div className="edit">
       <div className="editTitleContainer">
         <h1 className="editTitle">My Profile</h1>
-        {/* <Link to="/newUser">
-          <button className="editAddButton">Edit</button>
-        </Link> */}
       </div>
       <div className="editContainer">
         <div className="editUpdate">

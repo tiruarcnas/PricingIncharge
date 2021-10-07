@@ -1,4 +1,5 @@
 import * as React from 'react';
+import "./appbar.css";
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MuiDrawer from '@mui/material/Drawer';
@@ -32,6 +33,8 @@ import NewProduct from '../../pages/newProduct/NewProduct';
 import Saveproducts from '../../pages/Saveproducts/Saveproducts';
 import Profile from '../../pages/Profile/Profile';
 import { NotificationsNone, Language, Settings } from '@material-ui/icons';
+import Edit from '../../pages/Edit/Edit';
+
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
@@ -177,46 +180,46 @@ export default function MiniDrawer() {
         <div className="sidebar">
           <div className="sidebarWrapper">
             <div className="sidebarMenu">
-              <h3 className="sidebarTitle">Dashboard</h3>
+              {/* <h3 className="sidebarTitle">Dashboard</h3> */}
               <ul className="sidebarList">
                 <Link to="/home" className="link">
                   <li className="sidebarListItem active">
-                    <HomeIcon className="sidebarIcon" />
+                    <HomeIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
                     Home
                   </li>
                 </Link>
               </ul>
             </div>
             <div className="sidebarMenu">
-              <h3 className="sidebarTitle">Quick Menu</h3>
+              {/* <h3 className="sidebarTitle">Quick Menu</h3> */}
               <ul className="sidebarList">
                 <Link to="/newUser" className="link">
                   <li className="sidebarListItem">
-                    <ListAltIcon className="sidebarIcon" />
+                    <ListAltIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
                     CreateOrders
                   </li>
                 </Link>
                 <Link to="/users" className="link">
                   <li className="sidebarListItem">
-                    <SaveIcon className="sidebarIcon" />
+                    <SaveIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
                     SavedOrders
                   </li>
                 </Link>
                 <Link to="/products" className="link">
                   <li className="sidebarListItem">
-                    <RestoreIcon className="sidebarIcon" />
+                    <RestoreIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
                     ActiveOrders
                   </li>
                 </Link>
                 <Link to="/saveproducts" className="link">
                   <li className="sidebarListItem">
-                    <FastRewindIcon className="sidebarIcon" />
+                    <FastRewindIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
                     PreviewsOrders
                   </li>
                 </Link>
                 <Link to="/newproduct" className="link">
                   <li className="sidebarListItem">
-                    <AlarmIcon className="sidebarIcon" />
+                    <AlarmIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
                     Set Reminders
                   </li>
                 </Link>
@@ -248,6 +251,9 @@ export default function MiniDrawer() {
           </Route>
           <Route path="/saveproducts">
             <Saveproducts />
+          </Route>
+          <Route path="/edit">
+            <Edit />
           </Route>
           <Route path="/product/:productId">
             <Product />

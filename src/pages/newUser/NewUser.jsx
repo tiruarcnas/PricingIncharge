@@ -82,7 +82,7 @@ this.addCreate = this.addCreate.bind(this);
           AddComments:this.state.AddComments,
           Status:this.state.Status
       }
-      console.log(orderAdd)
+      //console.log(orderAdd)
       axios.post('http://localhost:9000/api/order', orderAdd)
       .then(res => { 
           console.log(res);
@@ -91,13 +91,29 @@ this.addCreate = this.addCreate.bind(this);
       .catch(err => { console.log(err) });
     }
 
-        //edit data
-        editUser()  {
-    
-          //this.props.history.push(`/Edit/${b}`);
-          alert("hiii");
-         }
-    
+    savedOrder=(event)=>{
+      event.preventDefault();
+      const orderAdd2 = {
+          ProductName: this.state.ProductName,
+          CASNumber:this.state.CASNumber,
+          Brand: this.state.Brand,
+          CatalogueNumber: this.state.CatalogueNumber,
+          PackSize: this.state.PackSize,
+          OrderQuantity: this.state.OrderQuantity,
+          ImportanceType: this.state.ImportanceType,   
+          ProductType: this.state.ProductType ,
+          VendorName:this.state.VendorName,    
+          AddComments:this.state.AddComments,
+          Status:this.state.Status
+      }
+      console.log(orderAdd2)
+      axios.post('http://localhost:9000/api/savedorder', orderAdd2)
+      .then(res => { 
+          console.log(res);
+          this.setState({ redirect: this.state.redirect === false });
+      })
+      .catch(err => { console.log(err) });
+    }
   render(){
   return (
     
@@ -178,7 +194,7 @@ this.addCreate = this.addCreate.bind(this);
       
         <div className="newUserItem2">
         <Link to="/users">
-          <button className="newUserButton" onClick={this.editUser}>Save Order</button>      
+          <button className="newUserButton" onClick={this.savedOrder}>Save Order</button>      
         </Link>
         </div>
       </form>
