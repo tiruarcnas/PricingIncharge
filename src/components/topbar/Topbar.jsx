@@ -2,14 +2,19 @@ import React from 'react';
 import './topbar.css';
 import { NotificationsNone, Language, Settings } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
-//import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-// import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-// import {Dropdown} from 'react-bootstrap';
+import { useState } from 'react';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 
 export default function Topbar() {
+  const [isOpened, setIsOpened] = useState(false);
   return (
-    <div className="topbar">
+    <div className="header" variant="h6">
       <div className="topbarWrapper">
+        <div className="icon" onClick={() => setIsOpened(!isOpened)}>
+          {isOpened ? <ChevronLeftIcon /> : <MenuIcon />}
+        </div>
         <div className="topLeft">
           <span className="logo">Inventoryadmin</span>
         </div>

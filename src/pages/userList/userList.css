@@ -3,19 +3,20 @@
   flex: 4;
   margin: 20px;
   border-radius: 20px;
-  
+
   padding: 5px;
+  margin-top: 5rem;
 }
 
 .userListTitle {
   font-size: 22px;
   font-weight: 600;
   margin-left: 20px;
-  text-align:justify;
+  text-align: justify;
   margin-bottom: inherit;
 }
 
-.userListTable{
+.userListTable {
   width: 100%;
   /* border: 0.5px solid black; */
   border-spacing: 17px;
@@ -25,31 +26,29 @@
   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
 }
 
-thead{
-  
-  border-bottom:1px solid rgb(58, 185, 202);
+thead {
+  border-bottom: 1px solid rgb(58, 185, 202);
 }
 
 /* .productListTr:nth-child(even){
   background-color: rgb(106, 136, 180);
 } */
 
-.userListTr:nth-child(even){
+.userListTr:nth-child(even) {
   background-color: rgb(29, 192, 192);
 }
 
 .userListTh,
-.userListTr{
+.userListTr {
   text-align: center;
   margin-left: 5px;
 }
 
-.userListTr1{
+.userListTr1 {
   background-color: #3bb077;
 }
 
-
-.userListUser{
+.userListUser {
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -64,7 +63,8 @@ thead{
   margin-right: 10px;
 }
 
-.userListDate,.userListAmount{
+.userListDate,
+.userListAmount {
   font-weight: 300;
 }
 
@@ -74,31 +74,28 @@ thead{
   border-radius: 10px;
 }
 
-.userListButton.Approved{
-    background-color: #e5faf2;
-    color: #3bb077;
+.userListButton.Approved {
+  background-color: #e5faf2;
+  color: #3bb077;
 }
-.userListButton.Declined{
-    background-color: #fff0f1;
-    color: #d95087;
-
+.userListButton.Declined {
+  background-color: #fff0f1;
+  color: #d95087;
 }
-Button.Pending{
-    background-color: #345292;
-    color: #2a7ade;
-
+Button.Pending {
+  background-color: #345292;
+  color: #2a7ade;
 }
 
-.userListbutton{
-  justify-content:space-between;
+.userListbutton {
+  justify-content: space-between;
   align-content: center;
   border-radius: 10px;
-  border:none;
+  border: none;
   font-size: 15px;
 }
 
-.userListbutton:hover{
+.userListbutton:hover {
   background-color: turquoise;
   cursor: pointer;
-  
 }
