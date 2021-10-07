@@ -3,26 +3,25 @@
   flex: 4;
   margin: 20px;
   border-radius: 20px;
+  margin-top: 5rem;
 }
 
 .newUserForm {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .newUserItem {
   width: 400px;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   margin-top: 10px;
   margin-right: 20px;
 }
 
-.newUserItem> ::placeholder{
+.newUserItem > ::placeholder {
   width: 100%;
 }
-
 
 .newUserItem > label {
   margin-bottom: 10px;
@@ -42,15 +41,15 @@
   margin-top: 15px;
 }
 
-.newUserGender>label{
-    margin: 10px;
-    font-size: 18px;
-    color: #555;
+.newUserGender > label {
+  margin: 10px;
+  font-size: 18px;
+  color: #555;
 }
 
-.newUserSelect{
-    height: 40px;
-    border-radius: 5px;
+.newUserSelect {
+  height: 40px;
+  border-radius: 5px;
 }
 .userShow {
   flex: 1;
@@ -60,18 +59,16 @@
   margin: 20px;
 }
 
-
-
-.newUserButton{
-    width: 200px;
-    border: none;
-    background-color: darkblue;
-    color: white;
-    padding: 7px 10px;
-    font-weight: 600;
-    border-radius: 10px;
-    margin-top: 30px;
-    cursor: pointer;
-    justify-content: space-between;
-    align-content: space-between;
+.newUserButton {
+  width: 200px;
+  border: none;
+  background-color: darkblue;
+  color: white;
+  padding: 7px 10px;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+  justify-content: space-between;
+  align-content: space-between;
 }

@@ -28,7 +28,7 @@
 
 .sidebarListItem {
   padding: 5px;
-  height: 2rem;
+  height: 3rem;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -40,7 +40,24 @@
   background-color: rgb(240, 240, 255);
 }
 
-.sidebarIcon{
-    margin-right: 5px;
-    font-size: 20px !important;
+.sidebarIcon {
+  margin-right: 5px;
+  font-size: 20px !important;
 }
+.sidebardrawer {
+  background: '#D8DCD6';
+  transition: 'width .7s';
+  position: 'static';
+}
+
+/* .sideclosed {
+  width: '0px';
+} */
+.sidebaropened {
+  width: '240px';
+}
+/* .drawer {
+  background: #d8dcd6;
+  width: 0px;
+  transition: width 0.7s;
+} */

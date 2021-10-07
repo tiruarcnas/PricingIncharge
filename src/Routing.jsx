@@ -1,5 +1,6 @@
 import Sidebar from './components/sidebar/Sidebar';
 import Topbar from './components/topbar/Topbar';
+import Footer from './components/footer/Footer';
 import './App.css';
 import Home from './pages/home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -11,13 +12,14 @@ import Product from './pages/product/Product';
 import NewProduct from './pages/newProduct/NewProduct';
 import Saveproducts from './pages/Saveproducts/Saveproducts';
 import Profile from './pages/Profile/Profile';
-
+import PersistentDrawerLeft from './components/appbar/AppBar';
 function Routing() {
   return (
     <Router>
-      <Topbar />
+      <PersistentDrawerLeft />
+      {/* <Topbar /> */}
       <div className="container">
-        <Sidebar />
+        {/* <Sidebar /> */}
         <Switch>
           <Route exact path="/home">
             <Home />
@@ -48,6 +50,7 @@ function Routing() {
           </Route>
         </Switch>
       </div>
+      <Footer />
     </Router>
   );
 }

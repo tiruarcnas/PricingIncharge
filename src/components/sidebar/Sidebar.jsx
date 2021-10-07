@@ -6,6 +6,7 @@ import FastRewindIcon from '@material-ui/icons/FastRewind';
 import AlarmIcon from '@material-ui/icons/Alarm';
 import SaveIcon from '@material-ui/icons/Save';
 import { Link } from 'react-router-dom';
+import Drawer from '@material-ui/core/Drawer';
 
 export default function Sidebar() {
   return (

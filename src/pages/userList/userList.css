@@ -6,27 +6,27 @@
   /* -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75); */
   padding: 5px;
+  margin-top: 5rem;
 }
 
 .userListTitle {
   font-size: 22px;
   font-weight: 600;
   margin-left: 20px;
-  text-align:justify;
+  text-align: justify;
 }
 
-.userListTable{
+.userListTable {
   width: 100%;
   border-spacing: 17px;
   border-radius: 20px;
-  
 }
 
-.userListTh{
+.userListTh {
   text-align: left;
 }
 
-.userListsUser{
+.userListsUser {
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -40,7 +40,8 @@
   margin-right: 10px;
 }
 
-.userListDate,.userListAmount{
+.userListDate,
+.userListAmount {
   font-weight: 300;
 }
 
@@ -50,42 +51,39 @@
   border-radius: 10px;
 }
 
-.userListButton.Approved{
-    background-color: #e5faf2;
-    color: #3bb077;
+.userListButton.Approved {
+  background-color: #e5faf2;
+  color: #3bb077;
 }
-.userListButton.Declined{
-    background-color: #fff0f1;
-    color: #d95087;
-
+.userListButton.Declined {
+  background-color: #fff0f1;
+  color: #d95087;
 }
-.userProductsButton.Pending{
-    background-color: #ebf1fe;
-    color: #2a7ade;
-
+.userProductsButton.Pending {
+  background-color: #ebf1fe;
+  color: #2a7ade;
 }
 
-.userProductsbutton{
-  justify-content:space-between;
+.userProductsbutton {
+  justify-content: space-between;
   align-content: center;
   border-radius: 10px;
   margin-inline: auto;
-  border:none;
+  border: none;
   font-size: 15px;
 }
 
-.userProductsbutton:hover{
+.userProductsbutton:hover {
   background-color: turquoise;
   cursor: pointer;
-  
 }
 
-.userListEdit{
+.userListEdit {
   background-color: rgb(59, 182, 66);
   border: none;
   border-radius: 5px;
 }
 
-.userListDelete{
+.userListDelete {
   color: red;
 }

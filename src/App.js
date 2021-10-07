@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Login from './components/login/Login';
 import Regstion from './components/login/Regstion';
 import Routing from './Routing';
+import MiniDrawer from './components/appbar/AppBar';
 function App() {
   return (
     <Router>
@@ -13,13 +14,11 @@ function App() {
         <Route exact path="/Regstion">
           <Regstion />
         </Route>
-        <Routing />
-<<<<<<< HEAD
-      </Switch>   
-=======
+
+        <MiniDrawer />
       </Switch>
->>>>>>> 9e403db0192007ea4071b0c0c95c48618d92c8dc
-</Router>
+    </Router>
   );
 }
+
 export default App;

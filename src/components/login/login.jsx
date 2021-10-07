@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 //import Avatar from '@mui/material/Avatar';
-import { Avatar } from "@material-ui/core";
+import { Avatar } from '@material-ui/core';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -13,24 +13,6 @@ import Grid from '@mui/material/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
-function Copyright(props) {
-  return (
-    <Typography
-      variant="body2"
-      color="text.secondary"
-      align="center"
-      {...props}
-    >
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 
 const theme = createTheme();
 
@@ -55,9 +37,9 @@ export default function Regstion() {
           item
           xs={false}
           sm={4}
-          md={7}
+          md={8}
           sx={{
-            backgroundImage: 'url(https://source.unsplash.com/random)',
+            backgroundImage: 'url(./assets/pharmasingin.jpg)',
             backgroundRepeat: 'no-repeat',
             backgroundColor: (t) =>
               t.palette.mode === 'light'
@@ -67,7 +49,16 @@ export default function Regstion() {
             backgroundPosition: 'center',
           }}
         />
-        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+        <Grid
+          item
+          xs={12}
+          sm={8}
+          md={4}
+          component={Paper}
+          elevation={6}
+          square
+          style={{ backgroundColor: 'rgb(29, 192, 192)' }}
+        >
           <Box
             sx={{
               my: 8,
@@ -135,7 +126,6 @@ export default function Regstion() {
                   </Link>
                 </Grid>
               </Grid>
-              <Copyright sx={{ mt: 5 }} />
             </form>
           </Box>
         </Grid>
