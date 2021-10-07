@@ -42,7 +42,7 @@ class Saveproducts extends Component {
                     data.map((user, i) => {                        
                         return (
            <tbody>
-            <tr className="saveProductsTr">
+            <tr className="saveProductsTr1">
               <td className="saveProductsUser">
                 <span className="saveProductsName">{user._id}</span>
               </td>

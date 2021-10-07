@@ -135,9 +135,11 @@ export default function MiniDrawer() {
           >
             <MenuIcon />
           </IconButton>
+          <div className="topLeft">
           <Typography variant="h6" noWrap component="div">
             Admin Dashbord
           </Typography>
+          </div>
           <div className="topRight">
             <div className="topbarIconContainer">
               <NotificationsNone />
