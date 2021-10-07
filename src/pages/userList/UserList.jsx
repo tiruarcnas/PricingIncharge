@@ -42,7 +42,7 @@ export default function UserList() {
           </td>
           <td className="productListAmount"></td>
           <td>
-            <Link to="/edit">
+            <Link to="/user/:userId">
                           <button className="userListbutton">Edit</button>
             </Link>
             <DeleteIcon className="userListDelete"/>
