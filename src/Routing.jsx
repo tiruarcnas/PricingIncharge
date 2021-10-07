@@ -12,16 +12,12 @@ import Product from './pages/product/Product';
 import NewProduct from './pages/newProduct/NewProduct';
 import Saveproducts from './pages/Saveproducts/Saveproducts';
 import Profile from './pages/Profile/Profile';
-<<<<<<< HEAD
-import PersistentDrawerLeft from './components/appbar/AppBar';
-=======
 import Edit from './pages/Edit/Edit';
 
->>>>>>> b5b39c48ad2a43d3eafb88bae03c5d934c6abb95
 function Routing() {
   return (
     <Router>
-      <PersistentDrawerLeft />
+      {/* <PersistentDrawerLeft /> */}
       {/* <Topbar /> */}
       <div className="container">
         {/* <Sidebar /> */}

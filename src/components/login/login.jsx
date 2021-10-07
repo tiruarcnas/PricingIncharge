@@ -14,8 +14,6 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-<<<<<<< HEAD
-=======
 function Copyright(props) {
   return (
     <Typography
@@ -34,7 +32,6 @@ function Copyright(props) {
   );
 }
 
->>>>>>> b5b39c48ad2a43d3eafb88bae03c5d934c6abb95
 const theme = createTheme();
 
 export default function Regstion() {
@@ -60,11 +57,7 @@ export default function Regstion() {
           sm={4}
           md={8}
           sx={{
-<<<<<<< HEAD
-            backgroundImage: 'url(./assets/pharmasingin.jpg)',
-=======
             backgroundImage: 'url(https://wallpapercave.com/wp/wp2264290.jpg)',
->>>>>>> b5b39c48ad2a43d3eafb88bae03c5d934c6abb95
             backgroundRepeat: 'no-repeat',
             backgroundColor: (t) =>
               t.palette.mode === 'light'
@@ -74,7 +67,6 @@ export default function Regstion() {
             backgroundPosition: 'center',
           }}
         />
-<<<<<<< HEAD
         <Grid
           item
           xs={12}
@@ -83,11 +75,8 @@ export default function Regstion() {
           component={Paper}
           elevation={6}
           square
-          style={{ backgroundColor: 'rgb(29, 192, 192)' }}
+          style={{ backgroundColor: 'rgb(25,125,125' }}
         >
-=======
-        <Grid item xs={12} sm={8} md={4} component={Paper} elevation={6} square style={{backgroundColor:'rgb(25,125,125'}}>
->>>>>>> b5b39c48ad2a43d3eafb88bae03c5d934c6abb95
           <Box
             sx={{
               my: 8,
@@ -128,9 +117,10 @@ export default function Regstion() {
                 type="password"
                 id="password"
                 autoComplete="current-password"
-               style={{background:'#ffffff'}}/>
+                style={{ background: '#ffffff' }}
+              />
               <FormControlLabel
-                control={<Checkbox value="remember" color="primary"  />}
+                control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"
               />
               <Button
@@ -145,12 +135,12 @@ export default function Regstion() {
               </Button>
               <Grid container>
                 <Grid item xs>
-                  <Link href="#" variant="body2" color='#dae7dced'>
+                  <Link href="#" variant="body2" color="#dae7dced">
                     Forgot password?
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link href="/Regstion" variant="body2" color='#dae7dced'>
+                  <Link href="/Regstion" variant="body2" color="#dae7dced">
                     {"Don't have an account? Sign Up"}
                   </Link>
                 </Grid>

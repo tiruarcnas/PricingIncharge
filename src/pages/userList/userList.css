@@ -3,7 +3,7 @@
   flex: 4;
   margin: 20px;
   border-radius: 20px;
-  
+
   padding: 5px;
   margin-top: 5rem;
 }
@@ -12,12 +12,8 @@
   font-size: 22px;
   font-weight: 600;
   margin-left: 20px;
-<<<<<<< HEAD
   text-align: justify;
-=======
-  text-align:justify;
   margin-bottom: inherit;
->>>>>>> b5b39c48ad2a43d3eafb88bae03c5d934c6abb95
 }
 
 .userListTable {
@@ -25,46 +21,34 @@
   /* border: 0.5px solid black; */
   border-spacing: 17px;
   border-radius: 20px;
-<<<<<<< HEAD
-}
-
-.userListTh {
-  text-align: left;
-}
-
-.userListsUser {
-=======
   border-collapse: collapse;
   -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
 }
 
-thead{
-  
-  border-bottom:1px solid rgb(58, 185, 202);
+thead {
+  border-bottom: 1px solid rgb(58, 185, 202);
 }
 
 /* .productListTr:nth-child(even){
   background-color: rgb(106, 136, 180);
 } */
 
-.userListTr:nth-child(even){
+.userListTr:nth-child(even) {
   background-color: rgb(29, 192, 192);
 }
 
 .userListTh,
-.userListTr{
+.userListTr {
   text-align: center;
   margin-left: 5px;
 }
 
-.userListTr1{
+.userListTr1 {
   background-color: #3bb077;
 }
 
-
-.userListUser{
->>>>>>> b5b39c48ad2a43d3eafb88bae03c5d934c6abb95
+.userListUser {
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -98,52 +82,20 @@ thead{
   background-color: #fff0f1;
   color: #d95087;
 }
-<<<<<<< HEAD
-.userProductsButton.Pending {
-  background-color: #ebf1fe;
+Button.Pending {
+  background-color: #345292;
   color: #2a7ade;
 }
 
-.userProductsbutton {
+.userListbutton {
   justify-content: space-between;
   align-content: center;
   border-radius: 10px;
-  margin-inline: auto;
   border: none;
   font-size: 15px;
 }
 
-.userProductsbutton:hover {
-=======
-Button.Pending{
-    background-color: #345292;
-    color: #2a7ade;
-
-}
-
-.userListbutton{
-  justify-content:space-between;
-  align-content: center;
-  border-radius: 10px;
-  border:none;
-  font-size: 15px;
-}
-
-.userListbutton:hover{
->>>>>>> b5b39c48ad2a43d3eafb88bae03c5d934c6abb95
+.userListbutton:hover {
   background-color: turquoise;
   cursor: pointer;
 }
-<<<<<<< HEAD
-
-.userListEdit {
-  background-color: rgb(59, 182, 66);
-  border: none;
-  border-radius: 5px;
-}
-
-.userListDelete {
-  color: red;
-}
-=======
->>>>>>> b5b39c48ad2a43d3eafb88bae03c5d934c6abb95
