@@ -37,7 +37,7 @@ export default function Sidebar() {
                 SavedOrders
               </li>
             </Link>
-            <Link to="/products" className="link">
+            <Link to="/productlist" className="link">
               <li className="sidebarListItem">
                 <RestoreIcon className="sidebarIcon" />
                 ActiveOrders

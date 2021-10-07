@@ -1,10 +1,26 @@
 import "./widgetLg.css";
 import { Link } from "react-router-dom";
-
-export default function WidgetLg() {
+import React ,{Component} from 'react';
+import axios from 'axios';
+class WidgetLg extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { 
+      order: []
+    }
+  }
+  componentDidMount() {
+    axios.get('http://localhost:9000/api/orderget')
+    .then(res => {
+        console.log(res);
+        this.setState({ order: res.data })
+    });
+}
+  render(){
   const Button = ({ type }) => {
     return <button className={"widgetLgButton " + type}>{type}</button>;
   };
+  var data = this.state.order;
   return (
     <div className="widgetLg">
       <h3 className="widgetLgTitle">ActiveOrders</h3>
@@ -19,77 +35,27 @@ export default function WidgetLg() {
           <th className="widgetLgTh">Order Status</th>
           <th className="widgetLgTh">Product Details</th>
         </tr>
+        {data.length > 0 ? 
+                    data.map((user, i) => {                        
+                        return (
+                          <tbody>
         <tr className="widgetLgTr">
           <td className="widgetLgUser">
-            <span className="widgetLgName">210920210001</span>
+            <span className="widgetLgName">{user._id}</span>
           </td>
-          <td className="widgetLgDate">Hydrogen</td>
-          <td className="widgetLgAmount">25 kg</td>
-          <td className="widgetLgStatus">CAS 001</td>
-          <td className="widgetLgDate">A</td>
-          <td className="widgetLgAmount">Arcnas</td>
+          <td className="widgetLgDate">{user.ProductName}</td>
+          <td className="widgetLgAmount">{user.PackSize}</td>
+          <td className="widgetLgStatus">{user.CASNumber}</td>
+          <td className="widgetLgDate">{user.ImportanceType}</td>
+          <td className="widgetLgAmount">{user.VendorName}</td>
           <td className="widgetLgStatus">
-            <Button type="Approved" />
+            <Button type={user.Status} />
           </td>
           <td className="widgetLgAmount">Gaseous state </td>
         </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgUser">
-            <span className="widgetLgName">210920210001</span>
-          </td>
-          <td className="widgetLgDate">Hydrogen</td>
-          <td className="widgetLgAmount">25 kg</td>
-          <td className="widgetLgStatus">CAS 001</td>
-          <td className="widgetLgDate">A</td>
-          <td className="widgetLgAmount">Arcnas</td>
-          <td className="widgetLgStatus">
-            <Button type="Approved" />
-          </td>
-          <td className="widgetLgAmount">Gaseous state </td>
-        </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgUser">
-            <span className="widgetLgName">210920210001</span>
-          </td>
-          <td className="widgetLgDate">Hydrogen</td>
-          <td className="widgetLgAmount">25 kg</td>
-          <td className="widgetLgStatus">CAS 001</td>
-          <td className="widgetLgDate">A</td>
-          <td className="widgetLgAmount">Arcnas</td>
-          <td className="widgetLgStatus">
-            <Button type="Approved" />
-          </td>
-          <td className="widgetLgAmount">Gaseous state </td>
-        </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgUser">
-            <span className="widgetLgName">210920210001</span>
-          </td>
-          <td className="widgetLgDate">Hydrogen</td>
-          <td className="widgetLgAmount">25 kg</td>
-          <td className="widgetLgStatus">CAS 001</td>
-          <td className="widgetLgDate">A</td>
-          <td className="widgetLgAmount">Arcnas</td>
-          <td className="widgetLgStatus">
-            <Button type="Approved" />
-          </td>
-          <td className="widgetLgAmount">Gaseous state </td>
-        </tr>
-        <tr className="widgetLgTr">
-          <td className="widgetLgUser">
-            <span className="widgetLgName">210920210001</span>
-          </td>
-          <td className="widgetLgDate">Hydrogen</td>
-          <td className="widgetLgAmount">25 kg</td>
-          <td className="widgetLgStatus">CAS 001</td>
-          <td className="widgetLgDate">A</td>
-          <td className="widgetLgAmount">Arcnas</td>
-          <td className="widgetLgStatus">
-            <Button type="Approved" />
-          </td>
-          <td className="widgetLgAmount">Gaseous state </td>
-        </tr>
-        
+        </tbody>
+       )}
+       ):null}   
       </table>
       {/* <button className="widgetLgbutton"> View More </button> */}
       <Link to="/products" >
@@ -98,3 +64,5 @@ export default function WidgetLg() {
     </div>
   );
 }
+}
+export default  WidgetLg;

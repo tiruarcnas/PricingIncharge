@@ -42,10 +42,10 @@ AddComments:{
     required:true
 },
 
-Status:{
+
+Status: {
     type:String,
-    
-    
+    //default: 'Pending'
 }
 
 

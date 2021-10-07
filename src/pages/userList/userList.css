@@ -3,8 +3,7 @@
   flex: 4;
   margin: 20px;
   border-radius: 20px;
-  /* -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75); */
+  
   padding: 5px;
 }
 
@@ -13,23 +12,48 @@
   font-weight: 600;
   margin-left: 20px;
   text-align:justify;
+  margin-bottom: inherit;
 }
 
 .userListTable{
   width: 100%;
+  /* border: 0.5px solid black; */
   border-spacing: 17px;
   border-radius: 20px;
+  border-collapse: collapse;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+thead{
   
+  border-bottom:1px solid rgb(58, 185, 202);
 }
 
-.userListTh{
-  text-align: left;
+/* .productListTr:nth-child(even){
+  background-color: rgb(106, 136, 180);
+} */
+
+.userListTr:nth-child(even){
+  background-color: rgb(29, 192, 192);
 }
 
-.userListsUser{
+.userListTh,
+.userListTr{
+  text-align: center;
+  margin-left: 5px;
+}
+
+.userListTr1{
+  background-color: #3bb077;
+}
+
+
+.userListUser{
   display: flex;
   align-items: center;
   font-weight: 600;
+  padding: 10px;
 }
 
 .userListImg {
@@ -59,33 +83,22 @@
     color: #d95087;
 
 }
-.userProductsButton.Pending{
-    background-color: #ebf1fe;
+Button.Pending{
+    background-color: #345292;
     color: #2a7ade;
 
 }
 
-.userProductsbutton{
+.userListbutton{
   justify-content:space-between;
   align-content: center;
   border-radius: 10px;
-  margin-inline: auto;
   border:none;
   font-size: 15px;
 }
 
-.userProductsbutton:hover{
+.userListbutton:hover{
   background-color: turquoise;
   cursor: pointer;
   
-}
-
-.userListEdit{
-  background-color: rgb(59, 182, 66);
-  border: none;
-  border-radius: 5px;
-}
-
-.userListDelete{
-  color: red;
 }

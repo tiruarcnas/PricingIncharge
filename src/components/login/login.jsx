@@ -23,8 +23,8 @@ function Copyright(props) {
       {...props}
     >
       {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+      <Link color="inherit" href="#">
+        ArcnasSoftwareSolutions
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -55,9 +55,9 @@ export default function Regstion() {
           item
           xs={false}
           sm={4}
-          md={7}
+          md={8}
           sx={{
-            backgroundImage: 'url(https://source.unsplash.com/random)',
+            backgroundImage: 'url(https://wallpapercave.com/wp/wp2264290.jpg)',
             backgroundRepeat: 'no-repeat',
             backgroundColor: (t) =>
               t.palette.mode === 'light'
@@ -67,7 +67,7 @@ export default function Regstion() {
             backgroundPosition: 'center',
           }}
         />
-        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+        <Grid item xs={12} sm={8} md={4} component={Paper} elevation={6} square style={{backgroundColor:'rgb(25,125,125'}}>
           <Box
             sx={{
               my: 8,
@@ -77,7 +77,7 @@ export default function Regstion() {
               alignItems: 'center',
             }}
           >
-            <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+            <Avatar sx={{ m: 1, bgcolor: '#ffffff' }}>
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
@@ -108,9 +108,9 @@ export default function Regstion() {
                 type="password"
                 id="password"
                 autoComplete="current-password"
-              />
+               style={{background:'#ffffff'}}/>
               <FormControlLabel
-                control={<Checkbox value="remember" color="primary" />}
+                control={<Checkbox value="remember" color="primary"  />}
                 label="Remember me"
               />
               <Button
@@ -125,12 +125,12 @@ export default function Regstion() {
               </Button>
               <Grid container>
                 <Grid item xs>
-                  <Link href="#" variant="body2">
+                  <Link href="#" variant="body2" color='#dae7dced'>
                     Forgot password?
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link href="/Regstion" variant="body2">
+                  <Link href="/Regstion" variant="body2" color='#dae7dced'>
                     {"Don't have an account? Sign Up"}
                   </Link>
                 </Grid>

@@ -5,6 +5,7 @@ import axios from 'axios';
 import { Redirect } from 'react-router';
 
 class NewUser extends Component {
+   guid = parseInt(Math.random() * 36);
     constructor(props){
       super(props)
       this.state={
@@ -18,7 +19,7 @@ class NewUser extends Component {
         ProductType:"",
         VendorName:"",
         AddComments:"",
-        Status: "",
+        Status:  "pending",
         redirect:false
       }
 this.handleProductNameChange = this.handleProductNameChange.bind(this);
@@ -65,7 +66,7 @@ this.addCreate = this.addCreate.bind(this);
      this.setState({AddComments: e.target.value});
    }
    handleStatusChange (e) {
-     this.setState({Status: e.target.value});
+      this.setState({Status: e.target.value});
    }
     addCreate(event) {
       event.preventDefault();
@@ -155,9 +156,7 @@ this.addCreate = this.addCreate.bind(this);
         <div className="newUserItem">
           <label>Add Comments</label>
           <input type="text" name="AddComments" onChange={this.handleAddCommentsChange} value={this.state.AddComments} placeholder="AddComments" />
-        </div><br/>
-
-        
+        </div><br/>     
         <div className="newUserItem">
           <label>Status</label>
           <select className="newUserSelect" name="Status" onChange={this.handleStatusChange} value={this.state.Status}  id="active">
@@ -172,7 +171,7 @@ this.addCreate = this.addCreate.bind(this);
         </div>
       
         <div className="newUserItem2">
-        <Link to="#">
+        <Link to="/">
           <button className="newUserButton">Save Order</button>      
         </Link>
         </div>

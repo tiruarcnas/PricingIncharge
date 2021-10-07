@@ -30,6 +30,10 @@
     border-bottom:1px solid rgb(58, 185, 202);
   }
   
+  /* .productListTr:nth-child(even){
+    background-color: rgb(106, 136, 180);
+  } */
+
   .productListTr:nth-child(even){
     background-color: rgb(29, 192, 192);
   }
@@ -40,6 +44,9 @@
     margin-left: 5px;
   }
 
+  .productListTr1{
+    background-color: #3bb077;
+  }
   
   
   .productListUser{
@@ -76,8 +83,8 @@
       color: #d95087;
   
   }
-  .productListButton.Pending{
-      background-color: #ebf1fe;
+  Button.Pending{
+      background-color: #345292;
       color: #2a7ade;
   
   }
