@@ -105,7 +105,7 @@ import {
            <div className="profile">
             <div className="profileTitleContainer">
               <h1 className="profileTitle">My Profile</h1>
-                <Link to="/edit">
+                <Link to="/edits">
                  <button className="profileAddButton">Edit</button>
                 </Link>
             </div>

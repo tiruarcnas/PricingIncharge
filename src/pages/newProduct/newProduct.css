@@ -1,12 +1,12 @@
 .newProduct {
   width: 100%;
   flex: 4;
-  margin: 20px;
+  /* margin: 20px; */
   border-radius: 20px;
   padding: 5px;
   -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .addProductForm {
@@ -78,6 +78,8 @@
 }
 
 .addProductButton {
+  margin-left: 90%;
+    margin-bottom: 20px;
   margin-top: 10px;
   padding: 7px 10px;
   border: none;

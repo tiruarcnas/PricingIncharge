@@ -1,8 +1,9 @@
 import "./userList.css";
+import DeleteIcon from '@mui/icons-material/Delete';
 //  import { DataGrid } from "@material-ui/data-grid";
 // import { DeleteOutline } from "@material-ui/icons";
 //  import { userRows } from "../../dummyData";
-//  import { Link } from "react-router-dom";
+  import { Link } from "react-router-dom";
 //  import { useState } from "react";
 
 export default function UserList() {
@@ -40,6 +41,12 @@ export default function UserList() {
             <Button type=""/>
           </td>
           <td className="productListAmount"></td>
+          <td>
+            <Link to="/edit">
+                          <button className="userListbutton">Edit</button>
+            </Link>
+            <DeleteIcon className="userListDelete"/>
+          </td>
         </tr>
                 </table>
                 </div>

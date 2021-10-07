@@ -1,9 +1,9 @@
 .newUser {
-  width: 300%;
+  width: 95%;
   flex: 4;
   margin: 20px;
   border-radius: 20px;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
 
 .newUserForm {
@@ -20,7 +20,7 @@
 }
 
 .newUserItem1 {
-  width: 987px;
+  width: 753px;
   display: flex;
   flex-direction: row-reverse;
   margin-top: 10px;
@@ -46,7 +46,7 @@
 }
 
 .newUserItem > input {
-  height: 20px;
+  height: 38px;
   padding: 10px;
   border: 1px solid gray;
   border-radius: 5px;

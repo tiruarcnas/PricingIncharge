@@ -1,7 +1,7 @@
 .edit {
     flex: 4;
     padding: 20px;
-    width: 200%;
+    width: 100%;
   }
   
   .editTitleContainer {
@@ -115,5 +115,5 @@
       color: white;
       font-weight: 600;
       margin-top: 10px;
-      margin-left: 268% ;
+      margin-left: 220% ;
   }

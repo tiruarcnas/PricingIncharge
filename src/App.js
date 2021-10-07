@@ -14,7 +14,6 @@ function App() {
         <Route exact path="/Regstion">
           <Regstion />
         </Route>
-
         <MiniDrawer />
       </Switch>
     </Router>
