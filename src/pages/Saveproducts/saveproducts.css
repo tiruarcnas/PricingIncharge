@@ -29,9 +29,9 @@ thead {
   border-bottom: 1px solid rgb(58, 185, 202);
 }
 
-.saveProductsTr:nth-child(even) {
+/* .saveProductsTr:nth-child(even) {
   background-color: rgb(29, 192, 192);
-}
+} */
 
 .saveProductsTh,
 .saveProductsTr {
@@ -43,6 +43,11 @@ thead {
   display: flex;
   align-items: center;
   font-weight: 600;
+  padding: 10px;
+}
+
+.saveProductsTr1{
+  background-color: #1ad5e2;
 }
 
 .saveProductsImg {

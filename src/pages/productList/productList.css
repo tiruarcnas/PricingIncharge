@@ -33,10 +33,6 @@ thead {
     background-color: rgb(106, 136, 180);
   } */
 
-.productListTr:nth-child(even) {
-  background-color: rgb(29, 192, 192);
-}
-
 .productListTh,
 .productListTr {
   text-align: center;
@@ -44,7 +40,7 @@ thead {
 }
 
 .productListTr1 {
-  background-color: #3bb077;
+  background-color: #579ef0;
 }
 
 .productListUser {
