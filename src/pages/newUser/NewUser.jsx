@@ -171,7 +171,7 @@ this.addCreate = this.addCreate.bind(this);
         </div>
       
         <div className="newUserItem2">
-        <Link to="/">
+        <Link to="/users">
           <button className="newUserButton">Save Order</button>      
         </Link>
         </div>

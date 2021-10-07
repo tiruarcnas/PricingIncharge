@@ -1,5 +1,5 @@
 .profile {
-  width: 250%;
+  width: 200%;
   flex: 4;
   padding: 20px;
   border-radius: 20px;
@@ -104,6 +104,7 @@
   }
   
   .profileUpdateButton{
+      display: flex;
       width: 15%;
       border-radius: 5px;
       border: none;
@@ -112,5 +113,5 @@
       background-color: darkblue;
       color: white;
       font-weight: 600;
-      margin-left: 268% ;
+      margin-left: 212% ;
   }
