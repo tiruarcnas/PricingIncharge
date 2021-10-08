@@ -109,6 +109,18 @@ router.post('/savedorder', function (req, res) {
     });
     
 
+// GET ALL 
+router.get('/savedorderget', function(req, res){
+    SavedOrder.find({}, function(err, savedorder){
+       if(err){
+           console.log(err);
+           res.json({msg: "failed"})
+       }
+       else {
+           res.json(savedorder);
+       }
+   })
+});
 
 // GET ALL 
 router.get('/orderget', function(req, res){
@@ -123,6 +135,23 @@ router.get('/orderget', function(req, res){
     })
 });
 
+
+
+// DELETE user
+router.post('/saved/delete/:id', function (req, res) {
+    let query = { _id: req.params.id }
+
+    SavedOrder.findByIdAndDelete(query, function(err){
+        if(err){
+            console.log(err);
+            res.json({msg: "failed"})
+            return;
+        }
+        else{
+            res.json({msg: "success"})
+        }
+    });
+});
 
 
 

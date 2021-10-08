@@ -35,9 +35,9 @@ function Routing() {
           <Route path="/newUser">
             <NewUser />
           </Route>
-          <Route path="/newUser">
+          {/* <Route path="/newUser">
             <Edit />
-          </Route>
+          </Route> */}
           <Route path="/productlist">
             <ProductList />
           </Route>
