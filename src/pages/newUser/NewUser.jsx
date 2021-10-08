@@ -284,7 +284,7 @@ class NewUser extends Component {
               </Link>
             </div>
           </form>
-          {this.state.redirect && <Redirect to={'/users'} />}
+          {this.state.redirect && <Redirect to={'/products'} />}
         </div>
       </div>
     );
