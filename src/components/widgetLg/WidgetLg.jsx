@@ -22,8 +22,10 @@ class WidgetLg extends Component {
   };
   var data = this.state.order;
   return (
-    <div className="widgetLg">
+    <div className="widgets">
       <h3 className="widgetLgTitle">ActiveOrders</h3>
+    <div className="widgetLg">
+      
       <table className="widgetLgTable">
         <tr className="widgetLgTr">
         <th className="widgetLgTh">OrderID</th>
@@ -61,6 +63,7 @@ class WidgetLg extends Component {
       <Link to="/products" >
       <button className="widgetLgbutton"> View More </button>
         </Link>
+    </div>
     </div>
   );
 }

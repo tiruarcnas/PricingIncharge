@@ -13,7 +13,6 @@ import Saveproducts from './pages/Saveproducts/Saveproducts';
 import Profile from './pages/Profile/Profile';
 import Edit from './pages/Edit/Edit';
 
-
 function Routing() {
   return (
     <Router>
@@ -36,6 +35,9 @@ function Routing() {
           <Route path="/newUser">
             <NewUser />
           </Route>
+          {/* <Route path="/newUser">
+            <Edit />
+          </Route> */}
           <Route path="/productlist">
             <ProductList />
           </Route>
@@ -48,6 +50,7 @@ function Routing() {
           <Route path="/edit">
             <Edit />
           </Route>
+
           <Route path="/newproduct">
             <NewProduct />
           </Route>

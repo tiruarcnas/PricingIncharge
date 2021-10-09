@@ -135,13 +135,24 @@ export default function MiniDrawer() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Admin Dashbord
-          </Typography>
+          <div className="topLeft">
+            <Typography variant="h6" noWrap component="div">
+              Admin Dashbord
+            </Typography>
+          </div>
           <div className="topRight">
-            <div className="topbarIconContainer">
+            {/* <div className="topbarIconContainer">
               <NotificationsNone />
               <span className="topIconBadge">2</span>
+            </div> */}
+            <div class="dropdown">
+              <button class="dropbtn">
+                <NotificationsNone />
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Notifications</a>
+                <span className="topIconBadge">2</span>
+              </div>
             </div>
             <div className="topbarIconContainer">
               <Language />
@@ -240,7 +251,7 @@ export default function MiniDrawer() {
           <Route path="/users">
             <UserList />
           </Route>
-          <Route path="/user/:userId">
+          <Route path="/user/:Id">
             <User />
           </Route>
           <Route path="/newUser">

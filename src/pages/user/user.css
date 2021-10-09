@@ -41,56 +41,7 @@
   margin-left: 20px;
 }
 
-.userShowTop {
-  display: flex;
-  align-items: center;
-}
 
-.userShowImg {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.userShowTopTitle {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-}
-
-.userShowUsername {
-  font-weight: 600;
-}
-
-.userShowUserTitle {
-  font-weight: 300;
-}
-
-.userShowBottom {
-  margin-top: 20px;
-}
-
-.userShowTitle {
-  font-size: 14px;
-  font-weight: 600;
-  color: rgb(175, 170, 170);
-}
-
-.userShowInfo {
-  display: flex;
-  align-items: center;
-  margin: 20px 0px;
-  color: #444;
-}
-
-.userShowIcon {
-  font-size: 16px !important;
-}
-
-.userShowInfoTitle {
-  margin-left: 10px;
-}
 
 .userUpdateTitle {
   font-size: 24px;
@@ -100,7 +51,7 @@
 .userUpdateForm {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-bottom: 2rem;
 }
 
 .userUpdateItem {
@@ -118,9 +69,11 @@
 .userUpdateInput {
   border: none;
   width: 250px;
-  height: 30px;
+  height: 36px;
   margin-left: 50px;
-  border-bottom: 1px solid gray;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid gray;
 }
 
 .userUpdateLeft {
