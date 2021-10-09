@@ -1,15 +1,117 @@
-// //import {
-//   CalendarToday,
-//   LocationSearching,
-//   MailOutline,
-//   PermIdentity,
-//   PhoneAndroid,
-//   Publish,
-// } from "@material-ui/icons";
+
 import { Link } from "react-router-dom";
 import "./user.css";
+import React ,{Component} from 'react';
+import axios from 'axios';
+import { Redirect } from 'react-router';
+class User extends Component {
+  constructor(props){
+    super(props)
+    this.state ={
+      //id:this.props.match.params.id,
+      ProductName: "",
+      CASNumber: "",
+      Brand: "",
+      CatalogueNumber: "",
+      PackSize: "",
+      OrderQuantity: "",
+      ImportanceType:"",
+      ProductType:"",
+      VendorName:"",
+      AddComments:"",
+      //Status:  "pending",
+      redirect:false
+    }
+  this.handleProductNameChange = this.handleProductNameChange.bind(this);
+this.handleCASNumberChange = this.handleCASNumberChange.bind(this);
+this.handleBrandChange = this.handleBrandChange.bind(this);
+this.handleCatalogueNumberChange =this.handleCatalogueNumberChange.bind(this);
+this.handlePackSizeChange =this.handlePackSizeChange.bind(this);
+this.handleOrderQuantityChange =this.handleOrderQuantityChange.bind(this);
+this.handleImportanceTypeChange =this.handleImportanceTypeChange.bind(this);
+this.handleProductTypeChange = this.handleProductTypeChange.bind(this);
+this.handleVendorNameChange = this.handleVendorNameChange.bind(this);
+this.handleAddCommentsChange = this.handleAddCommentsChange.bind(this);
+// this.handleStatusChange = this.handleStatusChange.bind(this);
+this.updateUser = this.updateUser.bind(this);
+  }
+  componentDidMount() {
+    // if (this.props.match && this.props.match.params.id) {
+       //const id = this.props.match.params.id
+    axios.get(`http://localhost:9000/api/singleorderget/${this.props.match.params.id}`)
+    .then(res => {
+        this.setState({ 
+          ProductName: res.data.ProductName,
+          CASNumber:res.data.CASNumber,
+          Brand: res.data.Brand,
+          CatalogueNumber: res.data.CatalogueNumber,
+          PackSize: res.data.PackSize,
+          OrderQuantity: res.data.OrderQuantity,
+          ImportanceType: res.data.ImportanceType,   
+          ProductType: res.data.ProductType,
+          VendorName:res.data.VendorName,    
+          AddComments:res.data.AddComments,
+         
+        })
+        //console.log(res)
+    });
+  }
+  
+  handleProductNameChange (e) {
+    this.setState({ProductName: e.target.value});
+  }
+  handleCASNumberChange (e) {
+    this.setState({CASNumber: e.target.value});
+  }
+  handleBrandChange(e) {
+    this.setState({Brand: e.target.value})
+  }
+ handleCatalogueNumberChange (e) {
+   this.setState({CatalogueNumber: e.target.value})
+ }
+ handlePackSizeChange (e){
+   this.setState({PackSize: e.target.value});
+ }
+ handleOrderQuantityChange (e){
+   this.setState({OrderQuantity: e.target.value});
+ }
+ handleImportanceTypeChange (e) {
+   this.setState({ImportanceType: e.target.value});
+ }
+ handleProductTypeChange (e) {
+   this.setState({ProductType: e.target.value});
+ }
+ handleVendorNameChange (e) {
+   this.setState({VendorName: e.target.value});
+ }
+ handleAddCommentsChange (e) {
+   this.setState({AddComments: e.target.value});
+ }
+ updateUser(event) {
+  event.preventDefault();
+  const userUpdate = {
+    ProductName: this.state.ProductName,
+    CASNumber:this.state.CASNumber,
+    Brand: this.state.Brand,
+    CatalogueNumber: this.state.CatalogueNumber,
+    PackSize: this.state.PackSize,
+    OrderQuantity: this.state.OrderQuantity,
+    ImportanceType: this.state.ImportanceType,   
+    ProductType: this.state.ProductType ,
+    VendorName:this.state.VendorName,    
+    AddComments:this.state.AddComments,
+    //Status:this.state.Status 
+  }
+  console.log(userUpdate)
+  axios.post(`http://localhost:9000/api/update/${this.props.match.params.id}`, userUpdate)
+  .then(res => { 
+      console.log(res);
+      this.setState({ redirect: this.state.redirect === false })
+  })
+  .catch(err => { console.log(err) });
+}
 
-export default function User() {
+  render(){
   return (
     <div className="user">
       <div className="userTitleContainer">
@@ -19,46 +121,9 @@ export default function User() {
         </Link>
       </div>
       <div className="userContainer">
-        {/* <div className="userShow"> */}
-          {/* <div className="userShowTop">
-            <img
-              src="https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-              alt=""
-              className="userShowImg"
-            />
-            <div className="userShowTopTitle">
-              <span className="userShowUsername">Anna Becker</span>
-              <span className="userShowUserTitle">Software Engineer</span>
-            </div>
-          </div> */}
-           {/* <div className="userShowBottom">
-            <span className="userShowTitle">Account Details</span>
-            <div className="userShowInfo">
-              <PermIdentity className="userShowIcon" />
-              <span className="userShowInfoTitle">annabeck99</span>
-            </div>
-            <div className="userShowInfo">
-              <CalendarToday className="userShowIcon" />
-              <span className="userShowInfoTitle">10.12.1999</span>
-            </div>
-            <span className="userShowTitle">Contact Details</span>
-            <div className="userShowInfo">
-              <PhoneAndroid className="userShowIcon" />
-              <span className="userShowInfoTitle">+1 123 456 67</span>
-            </div>
-            <div className="userShowInfo">
-              <MailOutline className="userShowIcon" />
-              <span className="userShowInfoTitle">annabeck99@gmail.com</span>
-            </div>
-            <div className="userShowInfo">
-              <LocationSearching className="userShowIcon" />
-              <span className="userShowInfoTitle">New York | USA</span>
-            </div>
-          </div>  */}
-        {/* </div> */}
         <div className="userUpdate">
           {/* <span className="userUpdateTitle">Edit</span> */}
-          <form className="userUpdateForm">
+          <form className="userUpdateForm" onSubmit={this.updateUser} method="post">
             <div className="userUpdateLeft">
               <div className="userUpdateItem">
                 <label>Order Created By</label>
@@ -68,6 +133,7 @@ export default function User() {
                   className="userUpdateInput"
                 />
               </div>
+              {/* <input type="text" value={id}/> */}
               <div className="userUpdateItem">
                 <label>Employee Id</label>
                 <input
@@ -89,71 +155,81 @@ export default function User() {
                 <input
                   type="text"
                   placeholder=""
-                  className="userUpdateInput"
+                  className="userUpdateInput" name="ProductName"
+                  onChange={this.handleProductNameChange} value={this.state.ProductName}
                 />
               </div>
               <div className="userUpdateItem">
                 <label>CAS Number</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="userUpdateInput"
+                  name="CASNumber" onChange={this.handleCASNumberChange} value={this.state.CASNumber}
                 />
               </div>
               <div className="userUpdateItem">
                 <label>Brand</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="userUpdateInput"
+                  name="Brand" onChange={this.handleBrandChange} value={this.state.Brand}
                 />
               </div>
               <div className="userUpdateItem">
                 <label>catalouge Number</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="userUpdateInput"
+                  name="catalougeNumber"
+                  onChange={this.handleCatalogueNumberChange} value={this.state.CatalogueNumber}
                 />
               </div>
               <div className="userUpdateItem">
                 <label>Pack Size</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="userUpdateInput"
+                  name="PackSize" onChange={this.handlePackSizeChange} value={this.state.PackSize}
                 />
               </div>
               <div className="userUpdateItem">
                 <label>Order Quantity</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="userUpdateInput"
+                  name="OrderQuantity" onChange={this.handleOrderQuantityChange} value={this.state.OrderQuantity}
                 />
               </div>
               <div className="userUpdateItem">
                 <label>Importance Type</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="userUpdateInput"
+                  name="ImportanceType" id="active" onChange={this.handleImportanceTypeChange} value={this.state.ImportanceType}
                 />
               </div>
               <div className="userUpdateItem">
                 <label>Product Type</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="userUpdateInput"
+                  name="ProductType" onChange={this.handleProductTypeChange} value={this.state.ProductType}
                 />
               </div>
               <div className="userUpdateItem">
                 <label>Vendor Name</label>
                 <input
                   type="text"
-                  placeholder="New York | USA"
+                  placeholder=""
                   className="userUpdateInput"
+                  name="VendorName" onChange={this.handleVendorNameChange}  value={this.state.VendorName}
                 />
               </div>
               <div className="userUpdateItem">
@@ -162,26 +238,22 @@ export default function User() {
                   type="text"
                   placeholder="New York | USA"
                   className="userUpdateInput"
+                  name="AddComments" onChange={this.handleAddCommentsChange} value={this.state.AddComments}
                 />
               </div>
             </div>
             <div className="userUpdateRight">
               <div className="userUpdateUpload">
-                {/* <img
-                  className="userUpdateImg"
-                  src="https://images.pexels.com/photos/1152994/pexels-photo-1152994.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                  alt=""
-                />
-                <label htmlFor="file">
-                  <Publish className="userUpdateIcon" />
-                </label> */}
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
               <button className="userUpdateButton">Update</button>
             </div>
           </form>
+          {this.state.redirect && (<Redirect to={'/users'}/>)}
         </div>
       </div>
       </div>
   );
 }
+}
+export default  User; 

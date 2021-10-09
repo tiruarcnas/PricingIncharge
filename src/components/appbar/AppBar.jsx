@@ -242,8 +242,8 @@ export default function MiniDrawer() {
           <Route path="/users">
             <UserList />
           </Route>
-          <Route path="/user/:userId">
-            <User />
+          <Route path="/user/:id" render={(props) => <User {...props}/>}>
+           
           </Route>
           <Route path="/newUser">
             <NewUser />
@@ -254,7 +254,8 @@ export default function MiniDrawer() {
           <Route path="/saveproducts">
             <Saveproducts />
           </Route>
-          <Route path="/edit">
+{/* profile edit */}
+          <Route path="/edit"> 
             <Edit />
           </Route>
           <Route path="/product/:productId">

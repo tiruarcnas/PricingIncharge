@@ -161,9 +161,9 @@ this.addCreate = this.addCreate.bind(this);
           <label>Importance Type</label>{/* <input type="text" name="ImportanceType" onChange={this.handleImportanceTypeChange} value={this.state.ImportanceType} placeholder="A/B/C" /> */}
           <select className="newUserSelect" name="ImportanceType" id="active" onChange={this.handleImportanceTypeChange} value={this.state.ImportanceType}>
             <option>Type</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
+            <option value="A(Low Level)">A(Low Level)</option>
+            <option value="B(Medium Level)">B(Medium Level)</option>
+            <option value="C(High Level)">C(High Level)</option>
           </select>
             
         </div>
@@ -198,7 +198,7 @@ this.addCreate = this.addCreate.bind(this);
         </Link>
         </div>
       </form>
-      {this.state.redirect && (<Redirect to={'/users'}/>)}
+      {this.state.redirect && (<Redirect to={'/Products'}/>)}
 
     </div>
     </div>

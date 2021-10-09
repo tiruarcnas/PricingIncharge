@@ -81,6 +81,21 @@ createorder.save(function(err){
 
 
 
+
+// GET order  ALL 
+router.get('/orderget', function(req, res){
+    CreateOrder.find({}, function(err, order){
+       if(err){
+           console.log(err);
+           res.json({msg: "failed"})
+       }
+       else {
+           res.json(order);
+       }
+   })
+});
+
+
 // Saved Orders
 router.post('/savedorder', function (req, res) {
     //const CreateOrder = require('../models/CreateOrder');
@@ -109,7 +124,7 @@ router.post('/savedorder', function (req, res) {
     });
     
 
-// GET ALL 
+// GET saved ALL 
 router.get('/savedorderget', function(req, res){
     SavedOrder.find({}, function(err, savedorder){
        if(err){
@@ -122,20 +137,15 @@ router.get('/savedorderget', function(req, res){
    })
 });
 
-// GET ALL 
-router.get('/orderget', function(req, res){
-     CreateOrder.find({}, function(err, order){
-        if(err){
-            console.log(err);
-            res.json({msg: "failed"})
-        }
-        else {
-            res.json(order);
-        }
-    })
+
+// GET SINGLE savedorder
+router.get('/singleorderget/:id', function(req, res){
+
+    let query = { _id: req.params.id }
+    SavedOrder.findById(query, function(err, user1){
+        res.json(user1);
+    });
 });
-
-
 
 // DELETE user
 router.post('/saved/delete/:id', function (req, res) {
@@ -153,27 +163,25 @@ router.post('/saved/delete/:id', function (req, res) {
     });
 });
 
-
-
 // UPDATE user
 router.post('/update/:id', function (req, res) {
-
-    Profile.findById(req.params.id, function(err, user) {
+    let query = { _id: req.params.id }
+    SavedOrder.findById(query, function(err, user) {
         if (!user)
             res.status(404).send("data is not found");
         else {
-            user.FirstName = req.body.FirstName;
-            user.LastName = req.body.LastName;
-            user.EmployeeId = req.body.EmployeeId;
-            user.Designation = req.body.Designation;
-            user.Email = req.body.Email;
-            user.PhoneNumber = req.body.PhoneNumber;
-            user.ReportingTo = req.body.ReportingTo;
-            user.Wing = req.body.Wing;
-            user.HQLocation = req.body.HQLocation;
-            user.HQAddress = req.body.HQAddress;
-            user.BloodGroup = req.body.BloodGroup;
-            
+            user.ProductName = req.body.ProductName;
+            user.CASNumber = req.body.CASNumber;
+            user.Brand = req.body.Brand;
+            user.CatalogueNumber = req.body.CatalogueNumber;
+            user.PackSize = req.body.PackSize;
+            user.OrderQuantity = req.body.OrderQuantity;
+            user.ImportanceType = req.body.ImportanceType;
+            user.ProductType = req.body.ProductType;
+            user.VendorName = req.body.VendorName;
+            user.AddComments = req.body.AddComments;
+            //user.Status = req.body.Status;
+                    
             user.save().then(user => {
                 res.json({msg: "success"})
             })

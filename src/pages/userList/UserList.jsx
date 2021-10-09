@@ -7,6 +7,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 //  import { useState } from "react";
 import React ,{Component} from 'react';
 import axios from 'axios';
+import EditIcon from '@mui/icons-material/Edit';
 import { Redirect } from 'react-router';
 
 class UserList extends Component {
@@ -55,6 +56,7 @@ deleteUser=(a)=> {
                   <th className="userListTh">Vendor Name</th>
                   <th className="userListTh">Order Status</th>
                   <th className="userListTh">Product Details</th>
+                  <th className="userListTh">Action</th>
                 </tr>
                 </thead>
                
@@ -71,20 +73,23 @@ deleteUser=(a)=> {
           <td className="userListDate">{save1.ImportanceType}</td>
           <td className="userListAmount">{save1.VendorName}</td>
           <td className="userListStatus">
-            <Button type={save1.Status}/>
+            <Button type="Saved"/>
           </td>
           <td className="productListAmount">Gaseous state</td>
           <td>
-            <Link to="/user/:userId">
-                          <button className="userListbutton">Edit</button>
+            <Link to={"/user/"+save1._id}>
+                          
+                            <EditIcon className="userListEditIcon"/>
+                    
             </Link>
-            {/* <DeleteIcon className="userListDelete"/> */}
-         <button className="userListbutton" type ="submit" onClick={(e)=>{if(window.confirm(`Are you sure to delete this record?ID::`+save1._id)){this.deleteUser(save1._id,e)}}}>delete</button> 
+            &nbsp;&nbsp;
+             <DeleteIcon className="userListDelete"  type ="submit" onClick={(e)=>{if(window.confirm(`Are you sure to delete this record?ID::`+save1._id)){this.deleteUser(save1._id,e)}}}/> 
+         {/* <button className="userListbutton" type ="submit" onClick={(e)=>{if(window.confirm(`Are you sure to delete this record?ID::`+save1._id)){this.deleteUser(save1._id,e)}}}>delete</button>  */}
           </td>
         </tr>
         </tbody>
           );
-        }):null};
+        }):null}
                 </table>
                 </div>
 
