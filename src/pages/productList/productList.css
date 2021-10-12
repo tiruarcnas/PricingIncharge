@@ -35,12 +35,12 @@ thead {
 
 .productListTh,
 .productListTr {
-  text-align: center;
+  text-align: inherit;
   margin-left: 5px;
 }
 
 .productListTr1 {
-  background-color: #579ef0;
+  background-color: #7fa0c7;
 }
 
 .productListUser {

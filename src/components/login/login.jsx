@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 //import Avatar from '@mui/material/Avatar';
-import { Avatar } from "@material-ui/core";
+import { Avatar } from '@material-ui/core';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -67,7 +67,16 @@ export default function Regstion() {
             backgroundPosition: 'center',
           }}
         />
-        <Grid item xs={12} sm={8} md={4} component={Paper} elevation={6} square style={{backgroundColor:'rgb(25,125,125'}}>
+        <Grid
+          item
+          xs={12}
+          sm={8}
+          md={4}
+          component={Paper}
+          elevation={6}
+          square
+          style={{ backgroundColor: 'rgb(25,125,125' }}
+        >
           <Box
             sx={{
               my: 8,
@@ -94,7 +103,8 @@ export default function Regstion() {
                 label="Email Address"
                 name="email"
                 autoComplete="email"
-                autoFocus
+                //autoFocus
+                style={{ background: '#ffffff' }}
               />
 
               <TextField
@@ -108,10 +118,10 @@ export default function Regstion() {
                 type="password"
                 id="password"
                 autoComplete="current-password"
-               style={{background:'#ffffff'
-               }}/>
+                style={{ background: '#ffffff' }}
+              />
               <FormControlLabel
-                control={<Checkbox value="remember" color="primary"  />}
+                control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"
               />
               <Button
@@ -126,12 +136,12 @@ export default function Regstion() {
               </Button>
               <Grid container>
                 <Grid item xs>
-                  <Link href="#" variant="body2" color='#dae7dced'>
+                  <Link href="/AdminDashbord" variant="body2" color="#dae7dced">
                     Forgot password?
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link href="/Regstion" variant="body2" color='#dae7dced'>
+                  <Link href="/Regstion" variant="body2" color="#dae7dced">
                     {"Don't have an account? Sign Up"}
                   </Link>
                 </Grid>

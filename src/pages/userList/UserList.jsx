@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 //  import { useState } from "react";
 import React, { Component } from 'react';
 import axios from 'axios';
+import EditIcon from '@mui/icons-material/Edit';
 import { Redirect } from 'react-router';
 
 class UserList extends Component {
@@ -52,6 +53,7 @@ class UserList extends Component {
               <th className="userListTh">Vendor Name</th>
               <th className="userListTh">Order Status</th>
               <th className="userListTh">Product Details</th>
+              <th className="userListTh">Action</th>
             </tr>
           </thead>
 
@@ -69,16 +71,16 @@ class UserList extends Component {
                       <td className="userListDate">{save1.ImportanceType}</td>
                       <td className="userListAmount">{save1.VendorName}</td>
                       <td className="userListStatus">
-                        <Button type={save1.Status} />
+                        <Button type="Saved" />
                       </td>
                       <td className="productListAmount">Gaseous state</td>
                       <td>
-                        <Link to="/user/:id">
-                          <button className="userListbutton">Edit</button>
+                        <Link to={'/user/' + save1._id}>
+                          <EditIcon className="userListEditIcon" />
                         </Link>
-                        {/* <DeleteIcon className="userListDelete"/> */}
-                        <button
-                          className="userListbutton"
+                        &nbsp;&nbsp;
+                        <DeleteIcon
+                          className="userListDelete"
                           type="submit"
                           onClick={(e) => {
                             if (
@@ -90,9 +92,8 @@ class UserList extends Component {
                               this.deleteUser(save1._id, e);
                             }
                           }}
-                        >
-                          delete
-                        </button>
+                        />
+                        {/* <button className="userListbutton" type ="submit" onClick={(e)=>{if(window.confirm(`Are you sure to delete this record?ID::`+save1._id)){this.deleteUser(save1._id,e)}}}>delete</button>  */}
                       </td>
                     </tr>
                   </tbody>

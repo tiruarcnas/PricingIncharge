@@ -85,7 +85,7 @@ const AppBar = styled(MuiAppBar, {
   }),
 }));
 
-const Drawer = styled(MuiDrawer, {
+const Drawer = styled(UserDashbord, {
   shouldForwardProp: (prop) => prop !== 'open',
 })(({ theme, open }) => ({
   width: drawerWidth,
@@ -102,7 +102,7 @@ const Drawer = styled(MuiDrawer, {
   }),
 }));
 
-export default function MiniDrawer() {
+export default function UserDashbord() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -251,9 +251,10 @@ export default function MiniDrawer() {
           <Route path="/users">
             <UserList />
           </Route>
-          <Route path="/user/:Id">
-            <User />
-          </Route>
+          <Route
+            path="/user/:id"
+            render={(props) => <User {...props} />}
+          ></Route>
           <Route path="/newUser">
             <NewUser />
           </Route>
@@ -263,6 +264,7 @@ export default function MiniDrawer() {
           <Route path="/saveproducts">
             <Saveproducts />
           </Route>
+          {/* profile edit */}
           <Route path="/edit">
             <Edit />
           </Route>

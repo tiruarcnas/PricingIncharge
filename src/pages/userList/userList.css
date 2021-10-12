@@ -49,6 +49,7 @@ thead {
 
 .userListUser {
   display: flex;
+  flex-direction: column;
   align-items: center;
   font-weight: 600;
   padding: 10px;
@@ -83,7 +84,7 @@ thead {
 }
 Button.Pending {
   background-color: #345292;
-  color: #2a7ade;
+  color: #545e6b;
 }
 
 .userListbutton {
@@ -93,18 +94,37 @@ Button.Pending {
   border: none;
   cursor: pointer;
   font-size: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.userListEditIcon{
+    /* text-decoration: none; */
+    background-color: #3bb077;
+}
+
+.userListEditIcon:hover{
+  /* text-decoration: none; */
+  background-color: #0e0f0f;
+  border-radius: 1rem;
+  color: #e5faf2;
 }
 
 .userListbutton:hover{
   background-color:red;
+  border-radius: 1rem;
+ 
 }
 
 .userListDelete{
   margin-top:5px;
-  color:red;
+  color:rgb(20, 13, 13);
+  cursor: pointer;
 }
 
-.userListbutton:hover {
-  background-color: turquoise;
+.userListDelete:hover {
+  /* background-color: rgb(9, 10, 10); */
   cursor: pointer;
+  border-radius: 1rem;
+  color: #ff0000;
+
 }
