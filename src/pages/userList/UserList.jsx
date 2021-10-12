@@ -1,39 +1,37 @@
-import "./userList.css";
+import './userList.css';
 import DeleteIcon from '@mui/icons-material/Delete';
 //  import { DataGrid } from "@material-ui/data-grid";
 // import { DeleteOutline } from "@material-ui/icons";
 //  import { userRows } from "../../dummyData";
-  import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 //  import { useState } from "react";
-import React ,{Component} from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 import EditIcon from '@mui/icons-material/Edit';
 import { Redirect } from 'react-router';
 
 class UserList extends Component {
-  constructor(props){
-    super(props)
-    this.state={
-      pricing:[],
-      redirect:false
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      pricing: [],
+      redirect: false,
+    };
     this.deleteUser = this.deleteUser.bind(this);
   }
   componentDidMount() {
-    axios.get('http://localhost:9000/api/savedorderget')
-    .then(res => {
-        console.log(res);
-        this.setState({ pricing: res.data })
-    });
-}
-deleteUser=(a)=> {
-  //event.preventDefault();
-  //console.log(this.state.a)
-  axios.post(`http://localhost:9000/api/saved/delete/${a}`)
-    .then(res => {
+    axios.get('http://localhost:9000/api/savedorderget').then((res) => {
       console.log(res);
-        this.setState({ redirect: this.state.redirect === false })
-        window.location.reload();
+      this.setState({ pricing: res.data });
+    });
+  }
+  deleteUser = (a) => {
+    //event.preventDefault();
+    //console.log(this.state.a)
+    axios.post(`http://localhost:9000/api/saved/delete/${a}`).then((res) => {
+      console.log(res);
+      this.setState({ redirect: this.state.redirect === false });
+      window.location.reload();
     });
 }
   render(){
@@ -93,7 +91,8 @@ deleteUser=(a)=> {
                 </table>
                 </div>
 
-        )
-}
+
+    );
+  }
 }
 export default UserList;

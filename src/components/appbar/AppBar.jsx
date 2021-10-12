@@ -1,5 +1,5 @@
 import * as React from 'react';
-import "./appbar.css";
+import './appbar.css';
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MuiDrawer from '@mui/material/Drawer';
@@ -136,14 +136,23 @@ export default function MiniDrawer() {
             <MenuIcon />
           </IconButton>
           <div className="topLeft">
-          <Typography variant="h6" noWrap component="div">
-            Admin Dashbord
-          </Typography>
+            <Typography variant="h6" noWrap component="div">
+              Admin Dashbord
+            </Typography>
           </div>
           <div className="topRight">
-            <div className="topbarIconContainer">
+            {/* <div className="topbarIconContainer">
               <NotificationsNone />
               <span className="topIconBadge">2</span>
+            </div> */}
+            <div class="dropdown">
+              <button class="dropbtn">
+                <NotificationsNone />
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Notifications</a>
+                <span className="topIconBadge">2</span>
+              </div>
             </div>
             <div className="topbarIconContainer">
               <Language />
@@ -186,8 +195,8 @@ export default function MiniDrawer() {
               <ul className="sidebarList">
                 <Link to="/home" className="link">
                   <li className="sidebarListItem active">
-                    <HomeIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
-                    Home
+                    <HomeIcon className="sidebarIcon" />
+                    &nbsp;&nbsp;&nbsp; Home
                   </li>
                 </Link>
               </ul>
@@ -197,32 +206,32 @@ export default function MiniDrawer() {
               <ul className="sidebarList">
                 <Link to="/newUser" className="link">
                   <li className="sidebarListItem">
-                    <ListAltIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
-                    CreateOrders
+                    <ListAltIcon className="sidebarIcon" />
+                    &nbsp;&nbsp;&nbsp; CreateOrders
                   </li>
                 </Link>
                 <Link to="/users" className="link">
                   <li className="sidebarListItem">
-                    <SaveIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
-                    SavedOrders
+                    <SaveIcon className="sidebarIcon" />
+                    &nbsp;&nbsp;&nbsp; SavedOrders
                   </li>
                 </Link>
                 <Link to="/products" className="link">
                   <li className="sidebarListItem">
-                    <RestoreIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
-                    ActiveOrders
+                    <RestoreIcon className="sidebarIcon" />
+                    &nbsp;&nbsp;&nbsp; ActiveOrders
                   </li>
                 </Link>
                 <Link to="/saveproducts" className="link">
                   <li className="sidebarListItem">
-                    <FastRewindIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
-                    PreviewsOrders
+                    <FastRewindIcon className="sidebarIcon" />
+                    &nbsp;&nbsp;&nbsp; PreviewsOrders
                   </li>
                 </Link>
                 <Link to="/newproduct" className="link">
                   <li className="sidebarListItem">
-                    <AlarmIcon className="sidebarIcon" />&nbsp;&nbsp;&nbsp;
-                    Set Reminders
+                    <AlarmIcon className="sidebarIcon" />
+                    &nbsp;&nbsp;&nbsp; Set Reminders
                   </li>
                 </Link>
               </ul>
