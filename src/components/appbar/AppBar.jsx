@@ -32,6 +32,7 @@ import Product from '../../pages/product/Product';
 import NewProduct from '../../pages/newProduct/NewProduct';
 import Saveproducts from '../../pages/Saveproducts/Saveproducts';
 import Profile from '../../pages/Profile/Profile';
+import ViewProfile from '../../pages/Profile/ViewProfile';
 import { NotificationsNone, Language, Settings } from '@material-ui/icons';
 import Edit from '../../pages/Edit/Edit';
 
@@ -85,7 +86,7 @@ const AppBar = styled(MuiAppBar, {
   }),
 }));
 
-const Drawer = styled(UserDashbord, {
+const Drawer = styled(MuiDrawer, {
   shouldForwardProp: (prop) => prop !== 'open',
 })(({ theme, open }) => ({
   width: drawerWidth,
@@ -102,7 +103,7 @@ const Drawer = styled(UserDashbord, {
   }),
 }));
 
-export default function UserDashbord() {
+export default function MiniDrawer() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -273,6 +274,9 @@ export default function UserDashbord() {
           </Route>
           <Route path="/newproduct">
             <NewProduct />
+          </Route>
+          <Route path="/ViewProfile">
+            <ViewProfile />
           </Route>
         </Switch>
       </Box>

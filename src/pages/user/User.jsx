@@ -107,6 +107,10 @@ this.updateUser = this.updateUser.bind(this);
   .then(res => { 
       console.log(res);
       this.setState({ redirect: this.state.redirect === false })
+      //browserHistory.push("/users");
+      //this.props.history.push('/users')
+     // window.location.reload();
+
   })
   .catch(err => { console.log(err) });
 }
@@ -246,7 +250,7 @@ this.updateUser = this.updateUser.bind(this);
               <div className="userUpdateUpload">
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
-              <button className="userUpdateButton">Update</button>
+              <button type="submit" className="userUpdateButton">Update</button>
             </div>
           </form>
           {this.state.redirect && (<Redirect to={'/users'}/>)}

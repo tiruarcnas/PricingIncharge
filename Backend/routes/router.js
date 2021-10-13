@@ -169,7 +169,33 @@ router.post('/update/:id', function (req, res) {
       user
         .save()
         .then((user) => {
-          res.json({ msg: 'success' });
+          // res.json({msg: "success"})
+
+          SavedOrder.findOne({ _id: req.params.id })
+            .then((doc) => {
+              console.log(doc);
+
+              // Inserting the doc in destination collection
+              CreateOrder.insertMany([doc])
+                .then((d) => {
+                  console.log('Saved Successfully');
+                })
+                .catch((error) => {
+                  console.log(error);
+                });
+
+              // Removing doc from the source collection
+              SavedOrder.deleteOne({ _id: doc._id })
+                .then((d) => {
+                  console.log('Removed succesfully');
+                })
+                .catch((error) => {
+                  console.log(error);
+                });
+            })
+            .catch((error) => {
+              console.log(error);
+            });
         })
         .catch((err) => {
           res.json({ msg: 'falied' });

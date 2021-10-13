@@ -106,7 +106,7 @@ class Profile extends Component {
         <div className="profile">
           <div className="profileTitleContainer">
             <h1 className="profileTitle">My Profile</h1>
-            <Link to="#">
+            <Link to="/ViewProfile">
               <button className="profileAddButton">Edit</button>
             </Link>
           </div>
